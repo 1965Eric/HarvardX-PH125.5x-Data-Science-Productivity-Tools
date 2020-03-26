@@ -14,50 +14,49 @@ The textbook for the Data Science course series is [freely available online](htt
 
 ## Course Overview
 
-## Section 1: Installing Software
+# Section 1: Installing Software
 You will learn how to install R, RStudio, git (and git bash for Windows users), create a GitHub account, create a GitHub repository, and connect RStudio to your GitHub account.
 
-Section 2: Unix
+# Section 2: Unix
 You will learn the basics of managing your filesystem from the terminal with Unix commands such as mv and rm.
 
-Section 3: Reproducible Reports
+# Section 3: Reproducible Reports
 You will learn to create data science reports using R Markdown and the knitr package.
 
-Section 4: Git and GitHub
+# Section 4: Git and GitHub
 You will learn to use git and GitHub from the command line to clone and create repositories.
 
-Section 5: Advanced Unix
+# Section 5: Advanced Unix
 You will learn other Unix commands, including arguments, getting help, pipes, and wildcards that are helpful in data science.
 
-The textbook for this course is available here
-Comprehension Check
-Introduction to Rstudio, Git and Github
+The textbook for this course is available [here](https://rafalab.github.io/dsbook/introduction-to-productivity-tools.html)
 
-    Installing R and RStudio Which of the following statements about R and RStudio is true?
+## Comprehension Check
 
-A. R is a programming language, whereas RStudio is a desktop environment.
-B. You can use RStudio without using R, but we recommend using R in this course.
-C. When you download RStudio, it automatically downloads and installs R too.
-D. You can only use R on Mac OS X and Linux. Windows users must use RStudio.
+## Introduction to Rstudio, Git and Github
 
-    Introduction to RStudio
-    Select the code that will NOT install the popular graphing and data manipulation packages ggplot2 and dplyr in R.
+1. Installing R and RStudio Which of the following statements about R and RStudio is true?
+- [X] A. R is a programming language, whereas RStudio is a desktop environment.
+- [ ] B. You can use RStudio without using R, but we recommend using R in this course.
+- [ ] C. When you download RStudio, it automatically downloads and installs R too.
+- [ ] D. You can only use R on Mac OS X and Linux. Windows users must use RStudio.
 
-A. install.packages(c(“ggplot2”,“dplyr”))
-B. install.packages(“tidyverse”)
-C. install.packages(c("dplyr","ggplot2”)
-D. install.packages(“ggplot2”) install.packages(“dplyr”)
+2. Introduction to RStudio
 
-    Introduction to Git and GitHub
+Select the code that will NOT install the popular graphing and data manipulation packages ggplot2 and dplyr in R.
+- [ ] A. install.packages(c(“ggplot2”,“dplyr”))
+- [ ] B. install.packages(“tidyverse”)
+- [X] C. install.packages(c("dplyr","ggplot2”)
+- [ ] D. install.packages(“ggplot2”) install.packages(“dplyr”)
 
-    Pull
+3. Introduction to Git and GitHub
+- Pull
 
 What does the term “pull” mean in the context of using Git in RStudio?
-
-A. Add local files to a remote GitHub repo.
-B. Download changes from the remote repo to your local repository.
-C. Configure the RStudio environment to automatically connect to GitHub.
-D. Save changes made in RStudio to the local repository on your computer.
+- [ ] A. Add local files to a remote GitHub repo.
+- [X] B. Download changes from the remote repo to your local repository.
+- [ ] C. Configure the RStudio environment to automatically connect to GitHub.
+- [ ] D. Save changes made in RStudio to the local repository on your computer.
 
 Note: We “pull” changes from the remote repo on GitHub to directories on our computers.
 
