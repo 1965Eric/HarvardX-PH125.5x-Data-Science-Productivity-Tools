@@ -1,20 +1,20 @@
 # Data_Science_Productivity_Tools
-HarvardX: PH125.5x | Data Science: Productivity Tools
-Abstract
+# HarvardX: PH125.5x | Data Science: Productivity Tools
 
+## Abstract
 This is the 5th course in the HarvardX Professional Certificate in Data Science, a series of courses that prepare you to do data analysis in R, from simple computations to machine learning.
 
-The textbook for the Data Science course series is freely available online.
-Learning Objectives
+The textbook for the Data Science course series is [freely available online](https://rafalab.github.io/dsbook/).
 
-    How to leverage the many useful features provided by RStudio
-    How to use Unix/Linux to manage your file system
-    How to start a repository on GitHub
-    How to perform version control with git
+## Learning Objectives
+- How to leverage the many useful features provided by RStudio
+- How to use Unix/Linux to manage your file system
+- How to start a repository on GitHub
+- How to perform version control with git
 
-Course Overview
+## Course Overview
 
-Section 1: Installing Software
+## Section 1: Installing Software
 You will learn how to install R, RStudio, git (and git bash for Windows users), create a GitHub account, create a GitHub repository, and connect RStudio to your GitHub account.
 
 Section 2: Unix
