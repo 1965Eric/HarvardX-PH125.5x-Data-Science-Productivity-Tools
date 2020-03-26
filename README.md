@@ -14,19 +14,19 @@ The textbook for the Data Science course series is [freely available online](htt
 
 ## Course Overview
 
-# Section 1: Installing Software
+### Section 1: Installing Software
 You will learn how to install R, RStudio, git (and git bash for Windows users), create a GitHub account, create a GitHub repository, and connect RStudio to your GitHub account.
 
-# Section 2: Unix
+### Section 2: Unix
 You will learn the basics of managing your filesystem from the terminal with Unix commands such as mv and rm.
 
-# Section 3: Reproducible Reports
+### Section 3: Reproducible Reports
 You will learn to create data science reports using R Markdown and the knitr package.
 
-# Section 4: Git and GitHub
+### Section 4: Git and GitHub
 You will learn to use git and GitHub from the command line to clone and create repositories.
 
-# Section 5: Advanced Unix
+### Section 5: Advanced Unix
 You will learn other Unix commands, including arguments, getting help, pipes, and wildcards that are helpful in data science.
 
 The textbook for this course is available [here](https://rafalab.github.io/dsbook/introduction-to-productivity-tools.html)
