@@ -60,125 +60,120 @@ What does the term “pull” mean in the context of using Git in RStudio?
 
 Note: We “pull” changes from the remote repo on GitHub to directories on our computers.
 
-    Push
+- Push
 
 What does the term “push” mean in the context of using Git in RStudio?
-
-A. Upload changes made in your local repository to a remote repository.
-B. Download changes from the remote repo to the RStudio environment.
-C. Configure the RStudio environment to automatically connect to GitHub.
-D. Save changes made in RStudio to the local repository on your computer.
+- [X] A. Upload changes made in your local repository to a remote repository.
+- [ ] B. Download changes from the remote repo to the RStudio environment.
+- [ ] C. Configure the RStudio environment to automatically connect to GitHub.
+- [ ] D. Save changes made in RStudio to the local repository on your computer.
 
 Note: We “push” files to add them to a remote GitHub repository from our local computers.
 
-    Commit
+- Commit
 
 What does the term “commit” mean in the context of using Git in RStudio?
-
-A. Add local files to a remote GitHub repo.
-B. Download changes from the remote repo to the RStudio environment.
-C. Configure the RStudio environment to automatically connect to GitHub.
-D. Save changes made in RStudio to the local repository on your computer.
+- [ ] A. Add local files to a remote GitHub repo.
+- [ ] B. Download changes from the remote repo to the RStudio environment.
+- [ ] C. Configure the RStudio environment to automatically connect to GitHub.
+- [X] D. Save changes made in RStudio to the local repository on your computer.
 
 Note: A “commit” is like saving a file that you’re working on. Be sure to write a brief description about what you changed in that file.
-Unix
 
-    Working Directory
+## Unix
+
+1. Working Directory
 
 It is important to know which directory, or folder, you’re in when you are working from the command line in Unix. Which line of code will tell you the current working directory?
+- [ ] A. cd
+- [X] B. pwd
+- [ ] C. rm
+- [ ] D. echo
 
-A. cd
-B. pwd
-C. rm
-D. echo
-
-    Previously Executed Code
+2. Previously Executed Code
 
 You can’t use your computer’s mouse in a terminal. How can you see a line of code that you executed previously?
+- [ ] A. Type pwd
+- [ ] B. Type echo
+- [X] C. Use the up arrow
+- [ ] D. Press the enter key
 
-A. Type pwd
-B. Type echo
-C. Use the up arrow
-D. Press the enter key
-
-    pwd Output
+3. pwd Output
 
 Assume a student types pwd and gets the following output printed to the screen: /Users/student/Documents.
 
 Then, the student enters the following commands in sequence:
-
+```
 mkdir projects
 
 cd projects
-
+```
 What will be printed to the screen if the student types pwd after executing the two lines of code shown above?
+- [ ] A. /Users/student/Documents
+- [X] B. /Users/student/Documents/projects
+- [ ] C. /Users/student
+- [ ] D. cd: projects: No such file or directory
 
-A. /Users/student/Documents
-B. /Users/student/Documents/projects
-C. /Users/student
-D. cd: projects: No such file or directory
+4. Moving Files 1
 
-    Moving Files 1
-
-The following is the full path to a your homework assignment file called “assignment.txt”: /Users/student/Documents/projects/homeworks/assignment.txt.
-
+The following is the full path to a your homework assignment file called “assignment.txt”: 
+```
+/Users/student/Documents/projects/homeworks/assignment.txt.
+```
 Which line of code will allow you to move the assignment.txt file from the “homeworks” directory into the parent directory “projects”?
-
-A. mv assignment.txt
-B. mv assignment.txt .
-C. mv assignment.txt ..
-D. mv assignment.txt /projects
+- [ ] A. mv assignment.txt
+- [ ] B. mv assignment.txt .
+- [X] C. mv assignment.txt ..
+- [ ] D. mv assignment.txt /projects
 
 Note: Double dots .. mean “up a directory”, so mv assignment.txt .. moves the assignment text file into the NEXT highest directory, projects.
 
-    Moving Files 2
+5. Moving Files 2
 
 You want to move a file called assignment.txt file into your projects directory. However, there is already a file called “assignment.txt” in the projects directory.
 
 What happens when you execute the “move” (mv) command to move the file into the new directory?
-
-A. The moved "assignment.txt" file replaces the old "assignment.txt" file that was in the "projects" directory with no warning.
-B. An error message warns you that you are about to overwrite an existing file and asks if you want to proceed.
-C. An error message tells you that a file already exists with that name and asks you to rename the new file.
-D. The moved “assignment.txt” file is automatically renamed “assignment.txt (copy)” after it is moved into the “projects” directory.
+- [X] A. The moved "assignment.txt" file replaces the old "assignment.txt" file that was in the "projects" directory with no warning.
+- [ ] B. An error message warns you that you are about to overwrite an existing file and asks if you want to proceed.
+- [ ] C. An error message tells you that a file already exists with that name and asks you to rename the new file.
+- [ ] D. The moved “assignment.txt” file is automatically renamed “assignment.txt (copy)” after it is moved into the “projects” directory.
 
 Note: Be careful when moving files around using the command line. Unix does not warn you before you overwrite a file
 
-Working with Unix
+### Working with Unix
 
-    Unix Commands
-    Which of the following statements does NOT correctly describe the utility of a command in Unix?
+6. Unix Commands
 
-A. The q key exits the viewer when you use less to view a file.
-B. The command ls lists files in the current directory.
-C. The command ```mkdir``` makes a new directory and moves into it.
-D. The mv command can move a file and change the name of a file.
-Reproducible Reports
+Which of the following statements does NOT correctly describe the utility of a command in Unix?
+- [ ] A. The q key exits the viewer when you use less to view a file.
+- [ ] B. The command ls lists files in the current directory.
+- [X] C. The command ```mkdir``` makes a new directory and moves into it.
+- [ ] D. The mv command can move a file and change the name of a file.
 
-    Why R Markdown?
+## Reproducible Reports
+
+1. Why R Markdown?
 
 Why might you want to create a report using R Markdown?
+- [ ] A. R Markdown has better spell-checking tools than other word processors.
+- [X] B. R Markdown allows you to automatically add figures to the final document.
+- [ ] C. R Markdown final reports have smaller file sizes than Word documents.
+- [ ] D. R Markdown documents look identical to the final report.
 
-A. R Markdown has better spell-checking tools than other word processors.
-B. R Markdown allows you to automatically add figures to the final document.
-C. R Markdown final reports have smaller file sizes than Word documents.
-D. R Markdown documents look identical to the final report.
-
-    Naming an R Chunk
+2. Naming an R Chunk
 
 You have a vector of student heights called heights. You want to generate a histogram of these heights in a final report, but you don’t want the code to show up in the final report. You want to name the R chunk “histogram” so that you can easily find the chunk later.
 
 Which of the following R chunks does everything you want it to do?
+- [ ] A. /{r, histogram, echo=FALSE} hist(heights)
+- [ ] B. {r histogram} hist(heights)
+- [ ] C. {r, echo=FALSE} hist(heights)
+- [X] D. {r histogram, echo=FALSE} hist(heights)
 
-A. /{r, histogram, echo=FALSE} hist(heights)
-B. {r histogram} hist(heights)
-C. {r, echo=FALSE} hist(heights)
-D. {r histogram, echo=FALSE} hist(heights)
-
-    R Markdown Report
+3. R Markdown Report
 
 Below is a section of R Markdown code that generates a report.
-
+```
 ‐‐‐
 title: “Final Grade Distribution”
 output: pdf_document
@@ -187,7 +182,8 @@ output: pdf_document
 load(file=“my_data.Rmd”)
 summary(grades)
 ```
-
+```
+```
 Select the statement that describes the file report generated by the R markdown code above.
 
 A. A PDF document called “Final Grade Distribution” that prints a summary of the “grades” object. The code to load the file and produce the summary will not be included in the final report.
