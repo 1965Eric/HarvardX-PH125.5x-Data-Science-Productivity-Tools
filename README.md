@@ -246,191 +246,193 @@ less
 3. Git Status
 
 You have successfully cloned a Github repository onto your local system. The cloned repository contains a file called “heights.txt” that lists the heights of students in a class. One student was missing from the dataset, so you add that student’s height using the following command:
-
+```
 echo “165” >> heights.txt
-
+```
 Next you enter the command git status to check the status of the Github repository.
 
 What message is returned and what does it mean?
+- [X] A. modified: heights.txt, no changes added to commit This message means that the heights.txt file was modified, but the changes have not been staged or committed to the local repository.
+- [ ] B. modified: heights.txt, no changes added to commit This message means that the heights.txt file was modified and staged, but not yet committed.
+- [ ] C. 1 file changed This message means that the heights.txt file was modified, staged, committed, and pushed to the upstream repository.
+- [ ] D. modified: heights.txt This message means that the heights.txt file was modified, staged, and committed.
 
-A. modified: heights.txt, no changes added to commit This message means that the heights.txt file was modified, but the changes have not been staged or committed to the local repository.
-B. modified: heights.txt, no changes added to commit This message means that the heights.txt file was modified and staged, but not yet committed.
-C. 1 file changed This message means that the heights.txt file was modified, staged, committed, and pushed to the upstream repository.
-D. modified: heights.txt This message means that the heights.txt file was modified, staged, and committed.
-
-    Modifying a File in an Upstream Repo
+4. Modifying a File in an Upstream Repo
 
 You cloned your own repository and modified a file within it on your local system. Next, you executed the following series of commands to include the modified file in the upstream repository, but it didn’t work. Here is the code you typed:
-
+```
 git add modified_file.txt
 git commit -m “minor changes to file” modified_file.txt
 git pull
-
+```
 What is preventing the modified file from being added to the upstream repository?
+- [ ] A. The wrong option is being used to add a descriptive message to the commit.
+- [X] B. git push should be used instead of git pull.
+- [ ] C. git commit should come before git add.
+- [ ] D. The git pull command line needs to include the file name.
 
-A. The wrong option is being used to add a descriptive message to the commit.
-B. git push should be used instead of git pull.
-C. git commit should come before git add.
-D. The git pull command line needs to include the file name.
+5. Creating a GitHub Repository Readme File
 
-    Creating a GitHub Repository Readme File
-
-You have a directory of scripts and data files on your computer that you want to share with collaborators using GitHub. You create a new repository on your GitHub account called “repo123” that has the following URL: https://github.com/user123/repo123.git.
-
+You have a directory of scripts and data files on your computer that you want to share with collaborators using GitHub. You create a new repository on your GitHub account called “repo123” that has the following URL: 
+```
+https://github.com/user123/repo123.git.
+```
 Which of the following sequences of commands will convert the directory on your computer to a Github directory and create and add a descriptive “read me” file to the new repository?
-
+- [ ] A.
+```
 git init
 git add README.txt
 git commit -m "First commit. Adding README file."
 git remote add origin `https://github.com/user123/repo123.git`
 git push
-
+```
+- [ ] B.
+```
 echo “A new repository with my scripts and data” > README.txt
 git init
 git add
 git commit -m "First commit. Adding README file."
 git remote add origin `https://github.com/user123/repo123.git`
 git push
-
+```
+- [ ] C.
+```
 echo “A new repository with my scripts and data” > README.txt
 git init
 git add README.txt
 git commit -m "First commit. Adding README file."
 git remote add origin `https://github.com/user123/repo123.git`
 git pull
-
-D.
-
+```
+- [X] D.
+```
 echo “A new repository with my scripts and data” > README.txt
 git init
 git add README.txt
 git commit -m "First commit. Adding README file."
 git remote add origin `https://github.com/user123/repo123.git`
 git push
+```
+## Advanced Unix Arguments
 
-Advanced Unix Arguments
-
-    Arguments
+1. Arguments
 
 What will the command ls -lat produce?
-
-A. A list of all file (names, sizes, and other information) arranged in chronological order with the most recently modified files at the top of the list.
-B. A list of visible files (names, sizes, and other information) arranged in chronological order with the oldest files at the top of the list.
-C. A list of all files (names only) arranged in chronological order with the oldest files at the top of the list.
-D. A list of visible files (names only) arranged in chronological order with the most recent files at the top of the list.
+- [X] A. A list of all file (names, sizes, and other information) arranged in chronological order with the most recently modified files at the top of the list.
+- [ ] B. A list of visible files (names, sizes, and other information) arranged in chronological order with the oldest files at the top of the list.
+- [ ] C. A list of all files (names only) arranged in chronological order with the oldest files at the top of the list.
+- [ ] D. A list of visible files (names only) arranged in chronological order with the most recent files at the top of the list.
 
 Note: The -l argument makes the list “long”, meaning that information other than just the filename will be provided. The -a argument says that you want to see “all” files, even the hidden ones. The -t argument sorts the list by time, with the most recent files at the top.
 
-    Arguments 2
+2. Arguments 2
 
 What happens when you remove a directory using the command rm -r?
-
-A. You cannot remove a directory using the rm command.
-B. You permanently remove the entire directory, including all files and subdirectories.
-C. You move the entire directory to a trash folder, but it can be restored later.
-D. You get a warning message asking if you want to proceed, then you delete the directory.
+- [ ] A. You cannot remove a directory using the rm command.
+- [X] B. You permanently remove the entire directory, including all files and subdirectories.
+- [ ] C. You move the entire directory to a trash folder, but it can be restored later.
+- [ ] D. You get a warning message asking if you want to proceed, then you delete the directory.
 
 Note: Use remove commands with caution in Unix. You can permanently delete entire directories with no warning.
 
-    Advanced Unix Getting Help and Pipes
-    Getting Help and Pipes
+3. Advanced Unix Getting Help and Pipes
+
+### Getting Help and Pipes
 
 By default, the head command in Unix displays the first 10 lines of a specified file. You can change the number of lines using an argument that indicates the numeric value of the desired number of lines.
 
 Which of the following commands displays only the first 6 lines of a manual for the ls command?
+- [ ] A. man ls -6 | head
+- [ ] B. head | man ls -6
+- [ ] C. head -6 | man ls
+- [X] D. man ls | head -6
 
-A. man ls -6 | head
-B. head | man ls -6
-C. head -6 | man ls
-D. man ls | head -6
+4. Advanced Unix Wildcards
 
-    Advanced Unix Wildcards
-    Wildcards
+### Wildcards
 
 You have a directory containing the following files.
 
 data1.csv, data2.txt, data3.txt, Data8.csv, data13.csv, data18.txt, Data22.txt, Data34.csv
 
 Which command will list only all of the .txt files that have “data” in their name? Remember that commands are case-sensitive.
+- [ ] A. ls data*
+- [X] B. ls data*.txt
+- [ ] C. ls *.txt
+- [ ] D. ls data?.txt
 
-A. ls data*
-B. ls data*.txt
-C. ls *.txt
-D. ls data?.txt
-
-Wildcards 2
+### Wildcards 2
 
 You have a directory containing the following files.
 
 data1.csv, data2.txt, data3.txt, Data8.csv, data13.csv, data18.txt, Data22.txt, Data34.csv
 
 Which command will remove every file that begins with “D”?
+- [X] A. rm D*
+- [ ] B. rm D*.txt
+- [ ] C. ls D*
+- [ ] D. ls D*.txt
 
-A. rm D*
-B. rm D*.txt
-C. ls D*
-D. ls D*.txt
-
-Wildcards 3
+### Wildcards 3
 
 Imagine you have multiple text files in the following directory: /Users/student/Documents/project.
 
 You enter the following commands in sequence:
-
+```
 mkdir data
 mv *.txt data
 cd data
-
+```
 What will be printed to the screen if you enter the ls command after executing the three lines of code shown above?
+- [ ] A. /Users/student/Documents/project/data
+- [X] B. The file names that were moved from the “project” directory into the “data” directory.
+- [ ] C. Nothing. You haven’t added anything to the new “data” directory yet.
+- [ ] D. The file names that remain in the “project” directory.
 
-A. /Users/student/Documents/project/data
-B. The file names that were moved from the “project” directory into the “data” directory.
-C. Nothing. You haven’t added anything to the new “data” directory yet.
-D. The file names that remain in the “project” directory.
-
-    Advanced Unix Environment Variables and Shells
-    Environment Variables and Shells
+5. Advanced Unix Environment Variables and Shells
+    
+### Environment Variables and Shells
 
 What does the command echo $HOME do?
+- [ ] A. Moves into to the home directory. 
+- [ ] B. Makes the current directory the home directory. 
+- [X] C. Prints the path to the home directory. 
+- [ ] D. Prints “$HOME” to the screen.
 
-A. Moves into to the home directory. B. Makes the current directory the home directory. C. Prints the path to the home directory. D. Prints “$HOME” to the screen.
-
-Environment Variables and Shells 2
+### Environment Variables and Shells 2
 
 Many systems operate using the Unix shell and command language, bash. Each time you start using bash, it executes the commands contained in a “dot” file. Your “dot” file may be called something like “.bash_profile” or “.bash_rc”.
 
 Which command will let you see your “dot” files?
+- [X] A. ls -a
+- [ ] B. ls bash*
+- [ ] C. head *bash*
+- [ ] D. ls -l
 
-A. ls -a
-B. ls bash*
-C. head *bash*
-D. ls -l
-
-    Advanced Unix Executables, Permissions, and File Types
-    Executables, Permissions, and File Types
+6. Advanced Unix Executables, Permissions, and File Types
+    
+### Executables, Permissions, and File Types
 
 Your colleague was editing his “dot” files when something went wrong. He first noticed there was an issue when he tried to execute the following line of code:
-
+```
 ls
-
+```
 He received the following error:
-
+```
 -bash: ls: command not found
-
+```
 What could have happened to cause this error?
+- [ ] A. He is trying to execute ls which is a bash command, but his system isn’t running bash as a shell.
+- [ ] B. The command ls doesn’t exist. He should be using the command ll.
+- [ ] C. He forgot to specify a file name to be listed. The command ls * should work.
+- [X] D. He changed the information contained in $PATH. Now the system cannot find the executable file for ls.
 
-A. He is trying to execute ls which is a bash command, but his system isn’t running bash as a shell.
-B. The command ls doesn’t exist. He should be using the command ll.
-C. He forgot to specify a file name to be listed. The command ls * should work.
-D. He changed the information contained in $PATH. Now the system cannot find the executable file for ls.
-
-Executables, Permissions, and File Types 2
+### Executables, Permissions, and File Types 2
 
 The bash profile in your home directory contains information that the bash shell runs each time you use it. You can customize the information in your bash profile to tell your system to do different things. For example, you can make an “alias”, which acts like a keyboard shortcut.
 
 Which line of code, when added to your bash profile, will let you print “seetop” to view the name, size, and file type of the 10 most recently added visible files?
-
-A. alias seetop=’ls -lt’
-B. alias seetop=’ls -lt | head’
-C. alias seetop=’ls -t | head’
-D. alias seetop=’head | ls -l’
+- [ ] A. alias seetop=’ls -lt’
+- [X] B. alias seetop=’ls -lt | head’
+- [ ] C. alias seetop=’ls -t | head’
+- [ ] D. alias seetop=’head | ls -l’
