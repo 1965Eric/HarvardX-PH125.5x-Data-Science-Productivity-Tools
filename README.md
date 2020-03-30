@@ -275,7 +275,7 @@ What is preventing the modified file from being added to the upstream repository
 
 You have a directory of scripts and data files on your computer that you want to share with collaborators using GitHub. You create a new repository on your GitHub account called “repo123” that has the following URL: 
 ```
-https://github.com/user123/repo123.git.
+https://github.com/user123/repo123.git
 ```
 Which of the following sequences of commands will convert the directory on your computer to a Github directory and create and add a descriptive “read me” file to the new repository?
 - [ ] A.
