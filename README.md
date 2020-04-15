@@ -88,7 +88,7 @@ What does the term “pull” mean in the context of using Git in RStudio?
 
 Note: We “pull” changes from the remote repo on GitHub to directories on our computers.
 
-8. - Push
+8. Push
 
 What does the term “push” mean in the context of using Git in RStudio?
 - [X] A. Upload changes made in your local repository to a remote repository.
@@ -98,7 +98,7 @@ What does the term “push” mean in the context of using Git in RStudio?
 
 Note: We “push” files to add them to a remote GitHub repository from our local computers.
 
-9. - Commit
+9. Commit
 
 What does the term “commit” mean in the context of using Git in RStudio?
 - [ ] A. Add local files to a remote GitHub repo.
