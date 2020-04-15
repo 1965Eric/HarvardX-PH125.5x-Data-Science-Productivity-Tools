@@ -117,6 +117,8 @@ Note: A “commit” is like saving a file that you’re working on. Be sure to 
 
 <img width="608" alt="Schermafbeelding 2020-04-15 om 16 00 56" src="https://user-images.githubusercontent.com/17474099/79346290-78343080-7f32-11ea-9dd2-1911f313d595.png">
 
+<img width="604" alt="Schermafbeelding 2020-04-15 om 16 01 32" src="https://user-images.githubusercontent.com/17474099/79346399-9ac64980-7f32-11ea-87f5-de12c321cc8d.png">
+
 
 
 1. Working Directory
