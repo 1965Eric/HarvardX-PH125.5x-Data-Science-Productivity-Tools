@@ -49,8 +49,36 @@ Select the code that will NOT install the popular graphing and data manipulation
 - [X] C. install.packages(c("dplyr","ggplot2”)
 - [ ] D. install.packages(“ggplot2”) install.packages(“dplyr”)
 
-3. Introduction to Git and GitHub
-- Pull
+3. Which of the following is not true about installing packages? Select ALL that apply.
+
+- [ ] A. To install a new package, the install.packages() function can be used
+- [ ] B. To install a new package, the drop-down menu Tools > Install packages can be used
+- [X] C. Installed packages will remain installed even if you upgrade R
+- [X] D. Installing a package by building from GitHub will give you the exact same version as on CRAN
+
+4. Which of the following commands for editing scripts is not correct?
+
+- [ ] A. To save a script: Ctrl+S on Windows/Linux / Command+S on Mac
+- [ ] B. To run an entire script: Ctrl+Shift+Enter on Windows/Linux / Command+Shift+Return on Mac, or click “Source” on the editor pane.
+- [ ] C. To open a new script: Ctrl+Shift+N on Windows/Linux / Command+Shift+N on Mac
+- [X] D. To run a single line of script: Ctrl+Shift / Command+Shift while cursor pointing to that line, or select the chunk and click "run"
+- [ ] E. To comment selected text: Ctrl+Shift+C or Command+Shift+C for Mac.
+
+5. Which of the following statements about keeping organized with RStudio projects is not correct?
+
+- [ ] A. To start a new project, click on File > New Project > New directory > New project > {choose a file directory and project name}
+- [X] B. You must always start a project in a new directory.
+- [ ] C. RStudio provides a way to keep all components of a data analysis project organized into one folder and to keep track of information about this project.
+- [ ] D. Creating a new R project will produce an .Rproj file associated with the project.
+
+6. What can you change in the global options? Select ALL that apply.
+
+- [ ] A. Set Git / GitHub configuration for each R project
+- [X] B. Move the editor pane to the upper right correct
+- [X] C. Change the editor theme to a dark background correct
+- [X] D. Customize key binding correct
+
+7. Introduction to Git and GitHub - Pull
 
 What does the term “pull” mean in the context of using Git in RStudio?
 - [ ] A. Add local files to a remote GitHub repo.
@@ -60,7 +88,7 @@ What does the term “pull” mean in the context of using Git in RStudio?
 
 Note: We “pull” changes from the remote repo on GitHub to directories on our computers.
 
-- Push
+8. - Push
 
 What does the term “push” mean in the context of using Git in RStudio?
 - [X] A. Upload changes made in your local repository to a remote repository.
@@ -70,7 +98,7 @@ What does the term “push” mean in the context of using Git in RStudio?
 
 Note: We “push” files to add them to a remote GitHub repository from our local computers.
 
-- Commit
+9. - Commit
 
 What does the term “commit” mean in the context of using Git in RStudio?
 - [ ] A. Add local files to a remote GitHub repo.
@@ -79,6 +107,9 @@ What does the term “commit” mean in the context of using Git in RStudio?
 - [X] D. Save changes made in RStudio to the local repository on your computer.
 
 Note: A “commit” is like saving a file that you’re working on. Be sure to write a brief description about what you changed in that file.
+
+10. Did you create a GitHub account? Enter your GitHub username below.
+
 
 ## Unix
 
