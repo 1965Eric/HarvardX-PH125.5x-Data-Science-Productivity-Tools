@@ -82,6 +82,8 @@ Note: A “commit” is like saving a file that you’re working on. Be sure to 
 
 ## Unix
 
+![asset-v1-HarvardX+PH125 5x+1T2018+type@asset+block@data_science_1_rev](https://user-images.githubusercontent.com/17474099/79341673-749dab00-7f2c-11ea-82a2-a1695085ef26.png)
+
 1. Working Directory
 
 It is important to know which directory, or folder, you’re in when you are working from the command line in Unix. Which line of code will tell you the current working directory?
