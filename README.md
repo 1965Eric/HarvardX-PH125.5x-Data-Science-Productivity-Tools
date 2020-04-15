@@ -119,7 +119,42 @@ Note: A “commit” is like saving a file that you’re working on. Be sure to 
 
 <img width="604" alt="Schermafbeelding 2020-04-15 om 16 01 32" src="https://user-images.githubusercontent.com/17474099/79346399-9ac64980-7f32-11ea-87f5-de12c321cc8d.png">
 
+<img width="606" alt="Schermafbeelding 2020-04-15 om 16 01 50" src="https://user-images.githubusercontent.com/17474099/79346510-c2b5ad00-7f32-11ea-811f-492976e60d95.png">
 
+Absolute path vs. relative path
+
+A full path specifies the location of a file from the root directory. It is independent of your present directory, and must begin with either a “/” or a “~”. In this example, the full path to our “project-1” file is: 
+```
+/home/projects/project-1
+```
+A relative path is the path relative to your present working directory. If our present working directory is the “projects” folder, then the relative path to our “project-1” file is simply: 
+```
+project-1
+```
+Path shortcuts
+
+One period “.” is your current working directory
+
+Two periods “..” is the parent directory (up one from your present working directory) 
+
+A tilde   “~” is your home directory.
+
+More path examples
+
+1. Your current working directory is ~/projects and you want to move to the figs directory in the project-1 folder
+
+- Solution 2: cd ~/projects/project-1/figs (absolute)
+- Solution 2:  cd project-1/figs (relative)
+
+2. Your current working directory is ~/projects and you want to move to the reports folder in the docs directory
+
+- Solution 1: cd ~/dos/reports (absolute)
+- Solution 2: cd ../docs/reports (relative)
+
+3. Your current working directory is ~/projects/project-1/figs and you want to move to the project-2 folder in the projects directory.
+
+- Solution 1: cd ~/projects/project-2 (absolute)
+- Solution 2: cd ../../project-2 (relative)
 
 1. Working Directory
 
