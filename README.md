@@ -121,7 +121,7 @@ Note: A “commit” is like saving a file that you’re working on. Be sure to 
 
 <img width="606" alt="Schermafbeelding 2020-04-15 om 16 01 50" src="https://user-images.githubusercontent.com/17474099/79346510-c2b5ad00-7f32-11ea-811f-492976e60d95.png">
 
-Absolute path vs. relative path
+### Absolute path vs. relative path
 
 A full path specifies the location of a file from the root directory. It is independent of your present directory, and must begin with either a “/” or a “~”. In this example, the full path to our “project-1” file is: 
 ```
@@ -131,7 +131,7 @@ A relative path is the path relative to your present working directory. If our p
 ```
 project-1
 ```
-Path shortcuts
+### Path shortcuts
 
 One period “.” is your current working directory
 
@@ -139,7 +139,7 @@ Two periods “..” is the parent directory (up one from your present working d
 
 A tilde   “~” is your home directory.
 
-More path examples
+### More path examples
 
 1. Your current working directory is ~/projects and you want to move to the figs directory in the project-1 folder
 
