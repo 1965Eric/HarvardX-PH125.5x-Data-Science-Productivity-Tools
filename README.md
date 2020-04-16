@@ -242,7 +242,7 @@ Which command should you use?
 
 9. The source() function reads a script from a url or file and evaluates it. Check ?source in the R console for more information.
 
-Suppose you have an R script at ~/myproject/R/plotfig.R and getwd() shows ~/myproject/result, and you are running your R script with source('~/myproject/R/plotfig.R').
+Suppose you have an R script at ```~/myproject/R/plotfig.R``` and getwd() shows ```~/myproject/result```, and you are running your R script with ```source('~/myproject/R/plotfig.R')```.
 
 Which R function should you write in plotfig.R in order to correctly produce a plot in ```~/myproject/result/fig/barplot.png```?
 - [X] A. ggsave('fig/barplot.png'), because this is the relative path to the current working directory.
