@@ -74,9 +74,9 @@ Select the code that will NOT install the popular graphing and data manipulation
 6. What can you change in the global options? Select ALL that apply.
 
 - [ ] A. Set Git / GitHub configuration for each R project
-- [X] B. Move the editor pane to the upper right correct
-- [X] C. Change the editor theme to a dark background correct
-- [X] D. Customize key binding correct
+- [X] B. Move the editor pane to the upper right
+- [X] C. Change the editor theme to a dark background
+- [X] D. Customize key binding
 
 7. Introduction to Git and GitHub - Pull
 
@@ -244,7 +244,7 @@ Which command should you use?
 
 Suppose you have an R script at ~/myproject/R/plotfig.R and getwd() shows ~/myproject/result, and you are running your R script with source('~/myproject/R/plotfig.R').
 
-Which R function should you write in plotfig.R in order to correctly produce a plot in ~/myproject/result/fig/barplot.png?
+Which R function should you write in plotfig.R in order to correctly produce a plot in ```~/myproject/result/fig/barplot.png```?
 - [X] A. ggsave('fig/barplot.png'), because this is the relative path to the current working directory.
 - [ ] B. ggsave('../result/fig/barplot.png'), because this is the relative path to the source file ("plotfig.R").
 - [ ] C. ggsave('result/fig/barplot.png'), because this is the relative path to the project directory.
@@ -273,10 +273,10 @@ Which R function should you write in plotfig.R in order to correctly produce a p
 
 13. Which of the following statements is incorrect about preparation for a data science project? Select ALL that apply.
 
-- [X] A. Always use absolute paths when working on a data science project. correct
-- [X] B. Saving .RData every time you exit R will keep your collaborator informed of what you did. correct
+- [X] A. Always use absolute paths when working on a data science project.
+- [X] B. Saving .RData every time you exit R will keep your collaborator informed of what you did.
 - [ ] C. Use ggsave to save generated files for use in a presentation or a report.
-- [X] D. Saving your code in a Word file and inserting output images is a good idea for making a reproducible report. correct
+- [X] D. Saving your code in a Word file and inserting output images is a good idea for making a reproducible report.
 
 ## Reproducible Reports
 
