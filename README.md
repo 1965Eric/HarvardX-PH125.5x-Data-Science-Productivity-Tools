@@ -224,6 +224,60 @@ Which of the following statements does NOT correctly describe the utility of a c
 - [X] C. The command ```mkdir``` makes a new directory and moves into it.
 - [ ] D. The mv command can move a file and change the name of a file.
 
+7. What does each of ~, ., .., / represent, respectively?
+
+- [ ] A. Current directory, Home directory, Root directory, Parent directory
+- [X] B. Home directory, Current directory, Parent directory, Root directory
+- [ ] C. Home directory, Hidden directory, Parent directory, Root directory
+- [ ] D. Root directory, Current directory, Parent directory, Home directory
+- [ ] E. Home directory, Parent directory, Home directory, Root directory
+
+8. Suppose you want to delete your project directory at ./myproject. The directory is not empty - there are still files inside of it.
+
+Which command should you use?
+- [ ] A. rmdir myproject
+- [ ] B. rmdir ./myproject
+- [X] C. rm -r myproject
+- [ ] D. rm ./myproject
+
+9. The source() function reads a script from a url or file and evaluates it. Check ?source in the R console for more information.
+
+Suppose you have an R script at ~/myproject/R/plotfig.R and getwd() shows ~/myproject/result, and you are running your R script with source('~/myproject/R/plotfig.R').
+
+Which R function should you write in plotfig.R in order to correctly produce a plot in ~/myproject/result/fig/barplot.png?
+- [X] A. ggsave('fig/barplot.png'), because this is the relative path to the current working directory.
+- [ ] B. ggsave('../result/fig/barplot.png'), because this is the relative path to the source file ("plotfig.R").
+- [ ] C. ggsave('result/fig/barplot.png'), because this is the relative path to the project directory.
+- [ ] D. ggsave('barplot.png'), because this is the file name.
+
+10. Which of the following statements about the terminal are not correct? Select ALL that apply.
+
+- [ ] A. echo is similar to cat and can be used to print.
+- [ ] B. The up arrow can be used to go back to a command you just typed.
+- [X] C. You can click on the terminal to change the position of the cursor
+- [X] D. For a long command that spans three lines, we can use the up-arrow to navigate the cursor to the first line.
+
+11. Which of the following statements about the filesystem is not correct?
+
+- [X] A. The home directory is where the system files that come with your computer exist.
+- [ ] B. The name of the home directory is likely the same as the username on the system.
+- [ ] C. File systems on Windows and Mac are different in some ways.
+- [ ] D. Root directory is the directory that contains all directories.
+
+12. Which of the following meanings for options following less are not correct? (Hint: use man less to check.)
+
+- [ ] A. -g: Highlights current match of any searched string
+- [ ] B. -i: case-insensitive searches
+- [X] C. -S: automatically save the search object
+- [ ] D. -X: leave file contents on screen when less exits.
+
+13. Which of the following statements is incorrect about preparation for a data science project? Select ALL that apply.
+
+- [X] A. Always use absolute paths when working on a data science project. correct
+- [X] B. Saving .RData every time you exit R will keep your collaborator informed of what you did. correct
+- [ ] C. Use ggsave to save generated files for use in a presentation or a report.
+- [X] D. Saving your code in a Word file and inserting output images is a good idea for making a reproducible report. correct
+
 ## Reproducible Reports
 
 1. Why R Markdown?
