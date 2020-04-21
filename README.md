@@ -328,9 +328,10 @@ Which of the following file types is NOT an option for the final output?
 - [ ] D. .html
 
 5. What will be the output for this Rmarkdown file when knit to HTML?
-
+```
 ```{r, echo=F}
 n <- nrow(mtcars)
+```
 ```
 Here `r n` cars are compared
 
