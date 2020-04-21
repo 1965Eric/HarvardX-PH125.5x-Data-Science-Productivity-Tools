@@ -49,8 +49,36 @@ Select the code that will NOT install the popular graphing and data manipulation
 - [X] C. install.packages(c("dplyr","ggplot2”)
 - [ ] D. install.packages(“ggplot2”) install.packages(“dplyr”)
 
-3. Introduction to Git and GitHub
-- Pull
+3. Which of the following is not true about installing packages? Select ALL that apply.
+
+- [ ] A. To install a new package, the install.packages() function can be used
+- [ ] B. To install a new package, the drop-down menu Tools > Install packages can be used
+- [X] C. Installed packages will remain installed even if you upgrade R
+- [X] D. Installing a package by building from GitHub will give you the exact same version as on CRAN
+
+4. Which of the following commands for editing scripts is not correct?
+
+- [ ] A. To save a script: Ctrl+S on Windows/Linux / Command+S on Mac
+- [ ] B. To run an entire script: Ctrl+Shift+Enter on Windows/Linux / Command+Shift+Return on Mac, or click “Source” on the editor pane.
+- [ ] C. To open a new script: Ctrl+Shift+N on Windows/Linux / Command+Shift+N on Mac
+- [X] D. To run a single line of script: Ctrl+Shift / Command+Shift while cursor pointing to that line, or select the chunk and click "run"
+- [ ] E. To comment selected text: Ctrl+Shift+C or Command+Shift+C for Mac.
+
+5. Which of the following statements about keeping organized with RStudio projects is not correct?
+
+- [ ] A. To start a new project, click on File > New Project > New directory > New project > {choose a file directory and project name}
+- [X] B. You must always start a project in a new directory.
+- [ ] C. RStudio provides a way to keep all components of a data analysis project organized into one folder and to keep track of information about this project.
+- [ ] D. Creating a new R project will produce an .Rproj file associated with the project.
+
+6. What can you change in the global options? Select ALL that apply.
+
+- [ ] A. Set Git / GitHub configuration for each R project
+- [X] B. Move the editor pane to the upper right
+- [X] C. Change the editor theme to a dark background
+- [X] D. Customize key binding
+
+7. Introduction to Git and GitHub - Pull
 
 What does the term “pull” mean in the context of using Git in RStudio?
 - [ ] A. Add local files to a remote GitHub repo.
@@ -60,7 +88,7 @@ What does the term “pull” mean in the context of using Git in RStudio?
 
 Note: We “pull” changes from the remote repo on GitHub to directories on our computers.
 
-- Push
+8. Push
 
 What does the term “push” mean in the context of using Git in RStudio?
 - [X] A. Upload changes made in your local repository to a remote repository.
@@ -70,7 +98,7 @@ What does the term “push” mean in the context of using Git in RStudio?
 
 Note: We “push” files to add them to a remote GitHub repository from our local computers.
 
-- Commit
+9. Commit
 
 What does the term “commit” mean in the context of using Git in RStudio?
 - [ ] A. Add local files to a remote GitHub repo.
@@ -80,7 +108,53 @@ What does the term “commit” mean in the context of using Git in RStudio?
 
 Note: A “commit” is like saving a file that you’re working on. Be sure to write a brief description about what you changed in that file.
 
+10. Did you create a GitHub account? Enter your GitHub username below.
+
+
 ## Unix
+
+![asset-v1-HarvardX+PH125 5x+1T2018+type@asset+block@data_science_1_rev](https://user-images.githubusercontent.com/17474099/79341673-749dab00-7f2c-11ea-82a2-a1695085ef26.png)
+
+<img width="608" alt="Schermafbeelding 2020-04-15 om 16 00 56" src="https://user-images.githubusercontent.com/17474099/79346290-78343080-7f32-11ea-9dd2-1911f313d595.png">
+
+<img width="604" alt="Schermafbeelding 2020-04-15 om 16 01 32" src="https://user-images.githubusercontent.com/17474099/79346399-9ac64980-7f32-11ea-87f5-de12c321cc8d.png">
+
+<img width="606" alt="Schermafbeelding 2020-04-15 om 16 01 50" src="https://user-images.githubusercontent.com/17474099/79346510-c2b5ad00-7f32-11ea-811f-492976e60d95.png">
+
+### Absolute path vs. relative path
+
+A full path specifies the location of a file from the root directory. It is independent of your present directory, and must begin with either a “/” or a “~”. In this example, the full path to our “project-1” file is: 
+```
+/home/projects/project-1
+```
+A relative path is the path relative to your present working directory. If our present working directory is the “projects” folder, then the relative path to our “project-1” file is simply: 
+```
+project-1
+```
+### Path shortcuts
+
+One period “.” is your current working directory
+
+Two periods “..” is the parent directory (up one from your present working directory) 
+
+A tilde   “~” is your home directory.
+
+### More path examples
+
+1. Your current working directory is ~/projects and you want to move to the figs directory in the project-1 folder
+
+- Solution 2: cd ~/projects/project-1/figs (absolute)
+- Solution 2:  cd project-1/figs (relative)
+
+2. Your current working directory is ~/projects and you want to move to the reports folder in the docs directory
+
+- Solution 1: cd ~/dos/reports (absolute)
+- Solution 2: cd ../docs/reports (relative)
+
+3. Your current working directory is ~/projects/project-1/figs and you want to move to the project-2 folder in the projects directory.
+
+- Solution 1: cd ~/projects/project-2 (absolute)
+- Solution 2: cd ../../project-2 (relative)
 
 1. Working Directory
 
@@ -150,6 +224,60 @@ Which of the following statements does NOT correctly describe the utility of a c
 - [X] C. The command ```mkdir``` makes a new directory and moves into it.
 - [ ] D. The mv command can move a file and change the name of a file.
 
+7. What does each of ~, ., .., / represent, respectively?
+
+- [ ] A. Current directory, Home directory, Root directory, Parent directory
+- [X] B. Home directory, Current directory, Parent directory, Root directory
+- [ ] C. Home directory, Hidden directory, Parent directory, Root directory
+- [ ] D. Root directory, Current directory, Parent directory, Home directory
+- [ ] E. Home directory, Parent directory, Home directory, Root directory
+
+8. Suppose you want to delete your project directory at ./myproject. The directory is not empty - there are still files inside of it.
+
+Which command should you use?
+- [ ] A. rmdir myproject
+- [ ] B. rmdir ./myproject
+- [X] C. rm -r myproject
+- [ ] D. rm ./myproject
+
+9. The source() function reads a script from a url or file and evaluates it. Check ?source in the R console for more information.
+
+Suppose you have an R script at ```~/myproject/R/plotfig.R``` and getwd() shows ```~/myproject/result```, and you are running your R script with ```source('~/myproject/R/plotfig.R')```.
+
+Which R function should you write in plotfig.R in order to correctly produce a plot in ```~/myproject/result/fig/barplot.png```?
+- [X] A. ggsave('fig/barplot.png'), because this is the relative path to the current working directory.
+- [ ] B. ggsave('../result/fig/barplot.png'), because this is the relative path to the source file ("plotfig.R").
+- [ ] C. ggsave('result/fig/barplot.png'), because this is the relative path to the project directory.
+- [ ] D. ggsave('barplot.png'), because this is the file name.
+
+10. Which of the following statements about the terminal are not correct? Select ALL that apply.
+
+- [ ] A. echo is similar to cat and can be used to print.
+- [ ] B. The up arrow can be used to go back to a command you just typed.
+- [X] C. You can click on the terminal to change the position of the cursor
+- [X] D. For a long command that spans three lines, we can use the up-arrow to navigate the cursor to the first line.
+
+11. Which of the following statements about the filesystem is not correct?
+
+- [X] A. The home directory is where the system files that come with your computer exist.
+- [ ] B. The name of the home directory is likely the same as the username on the system.
+- [ ] C. File systems on Windows and Mac are different in some ways.
+- [ ] D. Root directory is the directory that contains all directories.
+
+12. Which of the following meanings for options following less are not correct? (Hint: use man less to check.)
+
+- [ ] A. -g: Highlights current match of any searched string
+- [ ] B. -i: case-insensitive searches
+- [X] C. -S: automatically save the search object
+- [ ] D. -X: leave file contents on screen when less exits.
+
+13. Which of the following statements is incorrect about preparation for a data science project? Select ALL that apply.
+
+- [X] A. Always use absolute paths when working on a data science project.
+- [X] B. Saving .RData every time you exit R will keep your collaborator informed of what you did.
+- [ ] C. Use ggsave to save generated files for use in a presentation or a report.
+- [X] D. Saving your code in a Word file and inserting output images is a good idea for making a reproducible report.
+
 ## Reproducible Reports
 
 1. Why R Markdown?
@@ -198,6 +326,41 @@ Which of the following file types is NOT an option for the final output?
 - [ ] B. .pdf
 - [ ] C. .doc
 - [ ] D. .html
+
+5. What will be the output for this Rmarkdown file when knit to HTML?
+```
+```{r, echo=F}
+n <- nrow(mtcars)```
+
+```
+
+Here `r n` cars are compared
+
+- [X] A. The only output is the text: Here 32 cars are compared.
+- [ ] B. Since we have echo=F, the code chunk is not evaluated, therefore we will have both the code and the text: Here `r n` cars are compared.
+- [ ] C. The code will be displayed as well as Here 32 cars are compared.
+- [ ] D. R cannot comprehend the value of n, we will get an error.
+
+6. What is the final value from these three sequential Rmd code chunks?
+
+```{r eval=FALSE)
+a <- 2
+```
+
+```{r include=FALSE}
+print("Hello World!")
+a <- 5
+```
+
+```{r echo=FALSE}
+a <- a+1
+print(a)
+```
+
+- [ ] A. 2
+- [ ] B. 3
+- [X] C. 6
+- [ ] D. 5
 
 ## Git and GitHub
 
