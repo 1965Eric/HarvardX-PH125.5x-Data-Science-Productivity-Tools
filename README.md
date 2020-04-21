@@ -327,6 +327,39 @@ Which of the following file types is NOT an option for the final output?
 - [ ] C. .doc
 - [ ] D. .html
 
+5. What will be the output for this Rmarkdown file when knit to HTML?
+
+```{r, echo=F}
+n <- nrow(mtcars)
+```
+Here `r n` cars are compared
+
+- [X] A. The only output is the text: Here 32 cars are compared.
+- [ ] B. Since we have echo=F, the code chunk is not evaluated, therefore we will have both the code and the text: Here `r n` cars are compared.
+- [ ] C. The code will be displayed as well as Here 32 cars are compared.
+- [ ] D. R cannot comprehend the value of n, we will get an error.
+
+6. What is the final value from these three sequential Rmd code chunks?
+
+```{r eval=FALSE)
+a <- 2
+```
+
+```{r include=FALSE}
+print("Hello World!")
+a <- 5
+```
+
+```{r echo=FALSE}
+a <- a+1
+print(a)
+```
+
+- [ ] A. 2
+- [ ] B. 3
+- [X] C. 6
+- [ ] D. 5
+
 ## Git and GitHub
 
 1. Git and GitHub Benefits
