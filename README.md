@@ -330,9 +330,9 @@ Which of the following file types is NOT an option for the final output?
 5. What will be the output for this Rmarkdown file when knit to HTML?
 ```
 ```{r, echo=F}
-n <- nrow(mtcars)
+n <- nrow(mtcars)```
 ```
-```
+
 Here `r n` cars are compared
 
 - [X] A. The only output is the text: Here 32 cars are compared.
