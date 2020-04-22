@@ -333,7 +333,6 @@ Which of the following file types is NOT an option for the final output?
 n <- nrow(mtcars)```
 
 ```
-
 Here `r n` cars are compared
 
 - [X] A. The only output is the text: Here 32 cars are compared.
@@ -342,19 +341,24 @@ Here `r n` cars are compared
 - [ ] D. R cannot comprehend the value of n, we will get an error.
 
 6. What is the final value from these three sequential Rmd code chunks?
-
+```
 ```{r eval=FALSE)
-a <- 2
+a <- 2```
+
 ```
 
+```
 ```{r include=FALSE}
 print("Hello World!")
-a <- 5
+a <- 5```
+
 ```
 
+```
 ```{r echo=FALSE}
 a <- a+1
-print(a)
+print(a)```
+
 ```
 
 - [ ] A. 2
