@@ -455,9 +455,8 @@ git push
 ```
 - [ ] B.
 
-echo “A new repository with my scripts and data” > README.txt
-
 ```
+echo “A new repository with my scripts and data” > README.txt
 git init
 git add
 git commit -m "First commit. Adding README file."
@@ -466,9 +465,8 @@ git push
 ```
 - [ ] C.
 
-echo “A new repository with my scripts and data” > README.txt
-
 ```
+echo “A new repository with my scripts and data” > README.txt
 git init
 git add README.txt
 git commit -m "First commit. Adding README file."
@@ -477,9 +475,8 @@ git pull
 ```
 - [X] D.
 
-echo “A new repository with my scripts and data” > README.txt
-
 ```
+echo “A new repository with my scripts and data” > README.txt
 git init
 git add README.txt
 git commit -m "First commit. Adding README file."
