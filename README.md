@@ -380,8 +380,6 @@ Which statement describes reasons why we recommend using git and Github when wor
 
 2. Using Git at the Command Line
 
-### Cloning a Repo
-
 Select the steps necessary to:
 1. create a directory called “project-clone”,
 2. clone the contents of a git repo at the following URL into that directory (https://github.com/user123/repo123.git), and
@@ -482,6 +480,36 @@ git commit -m "First commit. Adding README file."
 git remote add origin `https://github.com/user123/repo123.git`
 git push
 ```
+
+6. You have made a local change to a file in your R project, which is associated with a GitHub repository. You add your changes and push, but you receive a message:
+
+```Everything up-to-date```
+Which of the following commands did you forget to do?
+- [ ] A. git pull
+- [ ] B. git merge
+- [ ] C. git add
+- [ ] D. git fetch
+- [X] E. git commit
+- [ ] F. git push
+- [ ] G. git rebase
+
+7. Suppose you previously cloned a repository with git clone. Running git status shows:
+```
+On branch master
+Your branch is up to date with 'origin/master'.
+
+	nothing to commit, working tree clean
+```
+
+However, you know that there are some changes in the upstream repository.
+
+How will you sync these changes with one command?
+- [ ] A. git fetch
+- [X] B. git pull
+- [ ] C. git merge origin/master
+- [ ] D. git merge upstream/master
+- [ ] E. git push
+
 ## Advanced Unix Arguments
 
 1. Arguments
