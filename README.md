@@ -454,8 +454,9 @@ git remote add origin `https://github.com/user123/repo123.git`
 git push
 ```
 - [ ] B.
-```
+
 echo “A new repository with my scripts and data” > README.txt
+```
 git init
 git add
 git commit -m "First commit. Adding README file."
@@ -463,8 +464,8 @@ git remote add origin `https://github.com/user123/repo123.git`
 git push
 ```
 - [ ] C.
-```
 echo “A new repository with my scripts and data” > README.txt
+```
 git init
 git add README.txt
 git commit -m "First commit. Adding README file."
@@ -472,8 +473,8 @@ git remote add origin `https://github.com/user123/repo123.git`
 git pull
 ```
 - [X] D.
-```
 echo “A new repository with my scripts and data” > README.txt
+```
 git init
 git add README.txt
 git commit -m "First commit. Adding README file."
