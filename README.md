@@ -342,9 +342,14 @@ Here `r n` cars are compared
 - [ ] D. R cannot comprehend the value of n, we will get an error.
 
 6. What is the final value from these three sequential Rmd code chunks?
+```
 
 ```{r eval=FALSE)
 a <- 2
+```
+
+```
+
 ```
 
 ```{r include=FALSE}
@@ -352,9 +357,14 @@ print("Hello World!")
 a <- 5
 ```
 
+```
+
+
 ```{r echo=FALSE}
 a <- a+1
 print(a)
+```
+
 ```
 
 - [ ] A. 2
