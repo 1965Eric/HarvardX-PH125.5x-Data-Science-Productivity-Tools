@@ -368,6 +368,8 @@ print(a)```
 
 ## Git and GitHub
 
+<img width="646" alt="Schermafbeelding 2020-04-22 om 16 19 44" src="https://user-images.githubusercontent.com/17474099/79993546-2866e380-84b5-11ea-8c3e-24a859d624c6.png">
+
 1. Git and GitHub Benefits
 
 Which statement describes reasons why we recommend using git and Github when working on data analysis projects?
