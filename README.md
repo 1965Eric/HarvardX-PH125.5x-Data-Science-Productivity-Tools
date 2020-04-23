@@ -618,4 +618,31 @@ Which line of code, when added to your bash profile, will let you print “seeto
 - [ ] C. alias seetop=’ls -t | head’
 - [ ] D. alias seetop=’head | ls -l’
 
-11. 
+11. The commands in the pipeline $ cat result.txt | grep "Harvard edX" | tee file2.txt | wc -l perform which of the following actions?
+
+- [ ] A. From result.txt, select lines containing “Harvard edX”, store them into file2.txt, and print all unique lines from result.txt.
+- [ ] B. From result.txt, select lines containing “Harvard edX”, and store them into file2.txt.
+- [X] C. From result.txt, select lines containing “Harvard edX”, store them into file2.txt, and print the total number of lines which were written to file2.txt.
+- [ ] D. From result.txt, select lines containing “Harvard edX”, store them into file2.txt, and print the number of times “Harvard edX” appears.
+
+12. How is git rebase used?
+
+- [ ] A. To switch branches or restore working tree files
+- [ ] B. Uses a binary search to find the commit that introduced a bug
+- [X] C. To reapply commits on top of another base tip
+- [ ] D. To reset the current HEAD to the specified state
+- [ ] E. To download objects and refs from another repository
+
+13. Which of the following statements is wrong about Advanced Unix Executables, Permissions, and File Types?
+
+- [X] A. In Unix, all programs are files/executables except for commands like ls, mv, and git.
+- [ ] B. which git allows a user to find the path to git.
+- [ ] C. When users create executable files themselves, they cannot be run just by typing the command - the full path must be typed instead.
+- [ ] D. ls -l can be used to inspect the permissions of each file.
+
+14. Which of the following commands correctly copies all files which are named as file-???.r (e.g file-abc.r, file-qwe.r, file-123.r) into the directory named your_directory?
+
+- [X] A. cp file-???.r ./your_directory
+- [ ] B. cp file-*.r ./your directory
+- [ ] C. cp file-[a-z].r ./your_directory
+- [ ] D. cp file-???.* ./your_directory
