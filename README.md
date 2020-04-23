@@ -525,9 +525,8 @@ What will the command ls -lat produce?
 
 Note: The -l argument makes the list “long”, meaning that information other than just the filename will be provided. The -a argument says that you want to see “all” files, even the hidden ones. The -t argument sorts the list by time, with the most recent files at the top.
 
-2. Arguments 2
+2. What happens when you remove a directory using the command rm -r?
 
-What happens when you remove a directory using the command rm -r?
 - [ ] A. You cannot remove a directory using the rm command.
 - [X] B. You permanently remove the entire directory, including all files and subdirectories.
 - [ ] C. You move the entire directory to a trash folder, but it can be restored later.
@@ -536,8 +535,6 @@ What happens when you remove a directory using the command rm -r?
 Note: Use remove commands with caution in Unix. You can permanently delete entire directories with no warning.
 
 3. Advanced Unix Getting Help and Pipes
-
-### Getting Help and Pipes
 
 By default, the head command in Unix displays the first 10 lines of a specified file. You can change the number of lines using an argument that indicates the numeric value of the desired number of lines.
 
@@ -549,8 +546,6 @@ Which of the following commands displays only the first 6 lines of a manual for 
 
 4. Advanced Unix Wildcards
 
-### Wildcards
-
 You have a directory containing the following files.
 
 data1.csv, data2.txt, data3.txt, Data8.csv, data13.csv, data18.txt, Data22.txt, Data34.csv
@@ -561,9 +556,7 @@ Which command will list only all of the .txt files that have “data” in their
 - [ ] C. ls *.txt
 - [ ] D. ls data?.txt
 
-### Wildcards 2
-
-You have a directory containing the following files.
+5. You have a directory containing the following files.
 
 data1.csv, data2.txt, data3.txt, Data8.csv, data13.csv, data18.txt, Data22.txt, Data34.csv
 
@@ -573,9 +566,7 @@ Which command will remove every file that begins with “D”?
 - [ ] C. ls D*
 - [ ] D. ls D*.txt
 
-### Wildcards 3
-
-Imagine you have multiple text files in the following directory: /Users/student/Documents/project.
+6. Imagine you have multiple text files in the following directory: /Users/student/Documents/project.
 
 You enter the following commands in sequence:
 ```
@@ -589,9 +580,7 @@ What will be printed to the screen if you enter the ls command after executing t
 - [ ] C. Nothing. You haven’t added anything to the new “data” directory yet.
 - [ ] D. The file names that remain in the “project” directory.
 
-5. Advanced Unix Environment Variables and Shells
-    
-### Environment Variables and Shells
+7. Advanced Unix Environment Variables and Shells
 
 What does the command echo $HOME do?
 - [ ] A. Moves into to the home directory. 
@@ -599,9 +588,7 @@ What does the command echo $HOME do?
 - [X] C. Prints the path to the home directory. 
 - [ ] D. Prints “$HOME” to the screen.
 
-### Environment Variables and Shells 2
-
-Many systems operate using the Unix shell and command language, bash. Each time you start using bash, it executes the commands contained in a “dot” file. Your “dot” file may be called something like “.bash_profile” or “.bash_rc”.
+8. Many systems operate using the Unix shell and command language, bash. Each time you start using bash, it executes the commands contained in a “dot” file. Your “dot” file may be called something like “.bash_profile” or “.bash_rc”.
 
 Which command will let you see your “dot” files?
 - [X] A. ls -a
@@ -609,11 +596,7 @@ Which command will let you see your “dot” files?
 - [ ] C. head *bash*
 - [ ] D. ls -l
 
-6. Advanced Unix Executables, Permissions, and File Types
-    
-### Executables, Permissions, and File Types
-
-Your colleague was editing his “dot” files when something went wrong. He first noticed there was an issue when he tried to execute the following line of code:
+9. Your colleague was editing his “dot” files when something went wrong. He first noticed there was an issue when he tried to execute the following line of code:
 ```
 ls
 ```
@@ -627,12 +610,12 @@ What could have happened to cause this error?
 - [ ] C. He forgot to specify a file name to be listed. The command ls * should work.
 - [X] D. He changed the information contained in $PATH. Now the system cannot find the executable file for ls.
 
-### Executables, Permissions, and File Types 2
-
-The bash profile in your home directory contains information that the bash shell runs each time you use it. You can customize the information in your bash profile to tell your system to do different things. For example, you can make an “alias”, which acts like a keyboard shortcut.
+10. The bash profile in your home directory contains information that the bash shell runs each time you use it. You can customize the information in your bash profile to tell your system to do different things. For example, you can make an “alias”, which acts like a keyboard shortcut.
 
 Which line of code, when added to your bash profile, will let you print “seetop” to view the name, size, and file type of the 10 most recently added visible files?
 - [ ] A. alias seetop=’ls -lt’
 - [X] B. alias seetop=’ls -lt | head’
 - [ ] C. alias seetop=’ls -t | head’
 - [ ] D. alias seetop=’head | ls -l’
+
+11. 
