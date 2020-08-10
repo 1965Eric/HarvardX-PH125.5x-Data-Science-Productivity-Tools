@@ -128,7 +128,7 @@ The textbook for this section is available [here (for Windows)](https://rafalab.
 
 **Install on Mac**
 
-1. Open the terminal, either from the utility folder or using Cmd+space, and check if you already have Git installed by typing ```git --version`` in the command line.
+1. Open the terminal, either from the utility folder or using Cmd+space, and check if you already have Git installed by typing ```git --version``` in the command line.
 2. If you already have Git installed, you will be shown the version number after executing the above. If you do not have Git installed already, you will be prompted to do so.
 
 ## GitHub
