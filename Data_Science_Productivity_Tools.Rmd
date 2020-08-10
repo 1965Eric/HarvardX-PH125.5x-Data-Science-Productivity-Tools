@@ -251,11 +251,11 @@ There is a two-part graded comprehension check at the end of the section.
 
 Below, you will find a summary of Unix commands that will be covered in this section and the Advanced Unix section. The examples here refer to this hypothetical file system
 
-![Hypothetical file system](images\Hypothetical file system.png)
+![Hypothetical file system](images/Hypothetical file system.png)
 
-![](images\Unix_commands_1.png)
+![Unix commands](images/Unix_commands_1.png)
 
-![](images\Unix_commands_2.png)
+![More Unix commands](images/Unix_commands_2.png)
 
 ### Absolute path vs. relative path
 
