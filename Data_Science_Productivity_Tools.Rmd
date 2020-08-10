@@ -104,29 +104,96 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 * To start a project, click on File > New Project > New repository > New project > decide the location of files and give a name to the project, e.g. "my-first-project". This will then generate a Rproj file called my-first-project.Rproj in the folder associated with the project, from which you can double click to start where you last left off.
 * The project name will appear in the upper left corner or the upper right corner, depending on your operating system. When you start an RStudio session with no project, it will display "Project: (None)".
 
-## Comprehension Check
+## Installing Git Introduction
 
-## Introduction to Rstudio, Git and Github
+**Key points**
 
-1. Installing R and RStudio Which of the following statements about R and RStudio is true?
+* Git is a version control system, tracking changes and coordinating the editing of code.
+* GitHub is a hosting system for code, which can help with your career profile.
+* Git is most effectively used with Unix, but it can also interface with RStudio.
+
+## Installing Git
+
+* If you have a **Windows machine**, you will need to install **Git and Git Bash**.
+* If you have a **Mac**, you will only need to install Git (which may already be installed on your system).
+
+The textbook for this section is available [here (for Windows)](https://rafalab.github.io/dsbook/accessing-the-terminal-and-installing-git.html#installing-git-and-git-bash-on-windows) or [here (for Mac)](https://rafalab.github.io/dsbook/accessing-the-terminal-and-installing-git.html#installing-git-on-the-mac)
+
+**Install on Windows**
+
+1. Download Git bash from [here](https://git-scm.com/)
+2. When asked to choose the default editor for Git, we recommend choosing nano if you do not already know VIM.
+3. The "git and optional Unix tools from Windows" option will allow you to learn Unix from Rstudio, however, it might interfere with the Windows command line.
+4. Finally, change the Rstudio preference so that you are using Git bash as the terminal (only for Windows user).
+
+**Install on Mac**
+
+1. Open the terminal, either from the utility folder or using Cmd+space, and check if you already have Git installed by typing ```git --version`` in the command line.
+2. If you already have Git installed, you will be shown the version number after executing the above. If you do not have Git installed already, you will be prompted to do so.
+
+## GitHub
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#github-accounts)
+
+**Key points**
+
+* Sign up for a GitHub account, with a name that is professional, short, and easy to remember
+* Connect to RStudio: global options > Git/SVM, enter the path to git executables
+* To avoid typing our GitHub password every time, we create a SSH/RSA key automatically through RStudio with the *create RSA key* button.
+
+## GitHub Repositories
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#github-repos)
+
+**Key points**
+
+To create a new GitHub repository and link it to an RStudio project, follow 2 steps:
+
+Step 1: Initialize a new repo on GitHub by clicking repository > new > choose a descriptive name.
+
+Step 2: Connect to RStudio.
+
+## RStudio, Git, and GitHub
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#git-overview)
+
+**Key points**
+
+* In terminal: configure git 
+
+```git config --global user.name "Your Name"```
+```git config --global user.email "your@email.com"```
+
+* In RStudio, create project > Version control > Git
+* Git pane: status symbols and color
+* Git actions:
+	1. **pull**: pull changes from remote repo (if you are in collaboration with others)
+	2. **add**: stage files for commit; click on stage box under git pane
+	3. **commit**: commit to the local repo; click on "commit" button under git pane; add a commit message
+	4. **push**: push to the remote repo on Github
+* .gitignore file: details check [here](https://git-scm.com/docs/gitignore)
+
+## Comprehension Check - Installing Software
+
+1. Which of the following statements about R and RStudio is true?
+
 - [X] A. R is a programming language, whereas RStudio is a desktop environment.
 - [ ] B. You can use RStudio without using R, but we recommend using R in this course.
 - [ ] C. When you download RStudio, it automatically downloads and installs R too.
 - [ ] D. You can only use R on Mac OS X and Linux. Windows users must use RStudio.
 
-2. Introduction to RStudio
+2. Select the code that will NOT install the popular graphing and data manipulation packages ```ggplot2``` and ```dplyr``` in R.
 
-Select the code that will NOT install the popular graphing and data manipulation packages ggplot2 and dplyr in R.
-- [ ] A. install.packages(c(“ggplot2”,“dplyr”))
-- [ ] B. install.packages(“tidyverse”)
-- [X] C. install.packages(c("dplyr","ggplot2”)
-- [ ] D. install.packages(“ggplot2”) install.packages(“dplyr”)
+- [ ] A. ```install.packages(c(“ggplot2”,“dplyr”))```
+- [ ] B. ```install.packages(“tidyverse”)```
+- [X] C. ```install.packages(c("dplyr","ggplot2”)```
+- [ ] D. ```install.packages(“ggplot2”) install.packages(“dplyr”)``
 
 3. Which of the following is not true about installing packages? Select ALL that apply.
 
-- [ ] A. To install a new package, the install.packages() function can be used
+- [X] A. To install a new package, the install.packages() function can be used
 - [ ] B. To install a new package, the drop-down menu Tools > Install packages can be used
-- [X] C. Installed packages will remain installed even if you upgrade R
+- [ ] C. Installed packages will remain installed even if you upgrade R
 - [X] D. Installing a package by building from GitHub will give you the exact same version as on CRAN
 
 4. Which of the following commands for editing scripts is not correct?
@@ -151,59 +218,55 @@ Select the code that will NOT install the popular graphing and data manipulation
 - [X] C. Change the editor theme to a dark background
 - [X] D. Customize key binding
 
-7. Introduction to Git and GitHub - Pull
+7. What does the term “pull” mean in the context of using Git in RStudio?
 
-What does the term “pull” mean in the context of using Git in RStudio?
 - [ ] A. Add local files to a remote GitHub repo.
 - [X] B. Download changes from the remote repo to your local repository.
 - [ ] C. Configure the RStudio environment to automatically connect to GitHub.
 - [ ] D. Save changes made in RStudio to the local repository on your computer.
 
-Note: We “pull” changes from the remote repo on GitHub to directories on our computers.
+8. What does the term “push” mean in the context of using Git in RStudio?
 
-8. Push
-
-What does the term “push” mean in the context of using Git in RStudio?
 - [X] A. Upload changes made in your local repository to a remote repository.
 - [ ] B. Download changes from the remote repo to the RStudio environment.
 - [ ] C. Configure the RStudio environment to automatically connect to GitHub.
 - [ ] D. Save changes made in RStudio to the local repository on your computer.
 
-Note: We “push” files to add them to a remote GitHub repository from our local computers.
+9. What does the term “commit” mean in the context of using Git in RStudio?
 
-9. Commit
-
-What does the term “commit” mean in the context of using Git in RStudio?
 - [ ] A. Add local files to a remote GitHub repo.
 - [ ] B. Download changes from the remote repo to the RStudio environment.
 - [ ] C. Configure the RStudio environment to automatically connect to GitHub.
 - [X] D. Save changes made in RStudio to the local repository on your computer.
 
-Note: A “commit” is like saving a file that you’re working on. Be sure to write a brief description about what you changed in that file.
-
 10. Did you create a GitHub account? Enter your GitHub username below.
 
+```1965Eric```
 
-## Unix
+## Section 2 Overview
 
-![asset-v1-HarvardX+PH125 5x+1T2018+type@asset+block@data_science_1_rev](https://user-images.githubusercontent.com/17474099/79341673-749dab00-7f2c-11ea-82a2-a1695085ef26.png)
+The Unix section discusses the basics of managing your filesystem from the terminal with Unix commands such as ```mv``` and ```rm```. 
 
-<img width="608" alt="Schermafbeelding 2020-04-15 om 16 00 56" src="https://user-images.githubusercontent.com/17474099/79346290-78343080-7f32-11ea-9dd2-1911f313d595.png">
+There is a two-part graded comprehension check at the end of the section.
 
-<img width="604" alt="Schermafbeelding 2020-04-15 om 16 01 32" src="https://user-images.githubusercontent.com/17474099/79346399-9ac64980-7f32-11ea-87f5-de12c321cc8d.png">
+Below, you will find a summary of Unix commands that will be covered in this section and the Advanced Unix section. The examples here refer to this hypothetical file system
 
-<img width="606" alt="Schermafbeelding 2020-04-15 om 16 01 50" src="https://user-images.githubusercontent.com/17474099/79346510-c2b5ad00-7f32-11ea-811f-492976e60d95.png">
+![Hypothetical file system](images\Hypothetical file system.png)
+
+![](images\Unix_commands_1.png)
+
+![](images\Unix_commands_2.png)
 
 ### Absolute path vs. relative path
 
 A full path specifies the location of a file from the root directory. It is independent of your present directory, and must begin with either a “/” or a “~”. In this example, the full path to our “project-1” file is: 
-```
-/home/projects/project-1
-```
+
+```/home/projects/project-1```
+
 A relative path is the path relative to your present working directory. If our present working directory is the “projects” folder, then the relative path to our “project-1” file is simply: 
-```
-project-1
-```
+
+```project-1```
+
 ### Path shortcuts
 
 One period “.” is your current working directory
@@ -216,18 +279,18 @@ A tilde   “~” is your home directory.
 
 1. Your current working directory is ~/projects and you want to move to the figs directory in the project-1 folder
 
-- Solution 2: cd ~/projects/project-1/figs (absolute)
-- Solution 2:  cd project-1/figs (relative)
+	- Solution 2: ```cd ~/projects/project-1/figs``` (absolute)
+	- Solution 2: ```cd project-1/figs``` (relative)
 
 2. Your current working directory is ~/projects and you want to move to the reports folder in the docs directory
 
-- Solution 1: cd ~/dos/reports (absolute)
-- Solution 2: cd ../docs/reports (relative)
-
+	- Solution 1: ```cd ~/dos/reports``` (absolute)
+	- Solution 2: ```cd ../docs/reports``` (relative)
+	
 3. Your current working directory is ~/projects/project-1/figs and you want to move to the project-2 folder in the projects directory.
 
-- Solution 1: cd ~/projects/project-2 (absolute)
-- Solution 2: cd ../../project-2 (relative)
+	- Solution 1: ```cd ~/projects/project-2``` (absolute)
+	- Solution 2: ```cd ../../project-2``` (relative)
 
 1. Working Directory
 
