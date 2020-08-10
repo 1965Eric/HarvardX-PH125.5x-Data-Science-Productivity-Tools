@@ -249,13 +249,19 @@ The Unix section discusses the basics of managing your filesystem from the termi
 
 There is a two-part graded comprehension check at the end of the section.
 
+\newpage
+
 Below, you will find a summary of Unix commands that will be covered in this section and the Advanced Unix section. The examples here refer to this hypothetical file system
 
 ![Hypothetical file system](images/Hypothetical file system.png)
 
+\newpage
+
 ![Unix commands](images/Unix_commands_1.png)
 
 ![More Unix commands](images/Unix_commands_2.png)
+
+\newpage
 
 ### Absolute path vs. relative path
 
@@ -291,76 +297,213 @@ A tilde   “~” is your home directory.
 
 	- Solution 1: ```cd ~/projects/project-2``` (absolute)
 	- Solution 2: ```cd ../../project-2``` (relative)
+	
+## Organizing with Unix
 
-1. Working Directory
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html)
 
-It is important to know which directory, or folder, you’re in when you are working from the command line in Unix. Which line of code will tell you the current working directory?
-- [ ] A. cd
-- [X] B. pwd
-- [ ] C. rm
-- [ ] D. echo
+**Resources**
 
-2. Previously Executed Code
+You can learn more about Unix from a number of other resources:
 
-You can’t use your computer’s mouse in a terminal. How can you see a line of code that you executed previously?
-- [ ] A. Type pwd
-- [ ] B. Type echo
+[Codecademy](https://www.codecademy.com/learn/learn-the-command-line)
+
+[Quora list of Linux reference books](https://www.quora.com/Which-are-the-best-Unix-Linux-reference-books)
+
+## The Terminal
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#the-terminal)
+
+**Key points**
+
+* The terminal helps to organize files in the system.
+* On Mac, use utilities > terminal.
+* On Windows, use Git bash program.
+* Use the keyboard to navigate the command line.
+
+*Code:* 
+
+```{r, eval=FALSE, echo=TRUE}
+echo "hello world"
+```
+
+## The Filesystem
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#filesystem)
+
+**Key points**
+
+* We refer to all the files, folders, and programs (executables) on your computer as the **filesystem**.
+* Your filesystem is organized as a series of nested folders each containing files, folders, and executables. (see the visualization above)
+* In Unix, folders are referred to as directories and directories that are inside other directories are often referred to as subdirectories. 
+* The home directory is where all your stuff is kept.  There is a hierarchical nature to the file system.
+* **Note for Windows Users:** The typical R installation will make your *Documents* directory your home directory in R. This will likely be different from your home directory in Git Bash. Generally, when we discuss home directories, we refer to the Unix home directory which for Windows, in this book, is the Git Bash Unix directory.
+
+## Working Directory
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#working-directory)
+
+**Key points**
+
+* The working directory is the current location.
+* Each terminal window has a working directory associated with it.
+* The "pwd" command will display your working directory. The "/" symbol separates directories, while the first "/" at the beginning of the path stands for the root directory. When a path starts with "/", it is a "full path", which finds the current directory from the root directory. "Relative path" will be introduced soon.
+* "~" means the home directory.
+
+## Unix Commands
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#unix-commands)
+
+**Key points**
+
+* navigate the file system with commands introduced in this section.
+* Auto-complete paths, commands and file names with the "Tab" key.
+
+*Code*
+
+```{r, eval=FALSE, echo=TRUE}
+ls #list dir content
+mkdir folder_name #create directory called "folder_name"
+rmdir folder_name  #remove an empty directory as long as it is empty
+rm -r folder_name  #remove dir that is not empty, "r" stands for recursive
+cd: change dir
+../ # two dots represents parent dir
+. # single dot represents current workingdir 
+cd ~/projects # concatenate with forward slashes
+cd ../.. # change to two parent layer beyond
+cd -  # whatever dir you were before
+cd  # return to the home dir
+```
+
+## mv and rm: Moving and Removing Files
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#more-unix-commands)
+
+**Key points**
+
+* The mv command moves files.
+* **[warning]** mv will not ask you to confirm the move, and it could potentially overwrite a file.
+* The rm command removes files.
+* **[warning]** rm is permanent, which is different than throwing a folder in the trash.
+
+*Code*
+
+```{r, eval=FALSE, echo=TRUE}
+mv path-to-file path-to-destination-directory
+rm filename-1 filename-2 filename-3
+```
+
+## less: Looking at a File
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#less-looking-at-a-file)
+
+**Key points**
+
+* ```less``` allows you to quickly look at the content of a file
+* Use q to exit the ```less``` page
+* use the arrows to navigate in the ```less``` page
+
+*Code
+
+```{r, eval=FALSE, echo=TRUE}
+less cv.tex
+```
+
+## Preparing for a Data Science Project
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#prep-project)
+
+**Key points**
+
+* Ideally, files (code, data, output) should be structured and self-contained
+* In a project, we prefer using relative paths (path relative to the default working directory) instead of the full path so that code can run smoothly on other individual's computers.
+* It is good practice to write a README.txt file to introduce the file structure to facilitate collaboration and for your future reference.
+
+*Code*
+
+```{r, eval=FALSE, echo=TRUE}
+########### In terminal ###########
+cd ~    # move to home directory
+mkdir projects    # make a new directory called projects
+cd projects    # move to ~/projects directory
+mkdir murders    # make new directory called murders inside of projects
+cd murders    # move to ~/projects/murders/
+mkdir data rda    # make two new directories, one is data the other is rda folder
+ls    # to check if we indeed have one data folder and one rda folder
+pwd    # check the current working directory
+mkdir figs    # make a directory called figs to store figures
+
+########## In RStudio ########
+# pick existing directory as new project
+getwd()    # to confirm current working directory
+save()    # save into .rda file, .RData is also fine but less preferred
+ggsave("figs/barplot.png")    # save a plot generated by ggplot2 to a dir called "figs"
+```
+
+## Comprehension Check Part 1 - Basic Unix
+
+1. It is important to know which directory, or folder, you’re in when you are working from the command line in Unix. Which line of code will tell you the current working directory?
+
+- [ ] A. ```cd```
+- [X] B. ```pwd```
+- [ ] C. ```rm```
+- [ ] D. ```echo```
+
+2. You can’t use your computer’s mouse in a terminal. How can you see a line of code that you executed previously?
+
+- [ ] A. Type ```pwd```
+- [ ] B. Type ```echo```
 - [X] C. Use the up arrow
 - [ ] D. Press the enter key
 
-3. pwd Output
-
-Assume a student types pwd and gets the following output printed to the screen: /Users/student/Documents.
+3. Assume a student types ```pwd``` and gets the following output printed to the screen: ```/Users/student/Documents```.
 
 Then, the student enters the following commands in sequence:
-```
-mkdir projects
 
+```{r, eval=FALSE, echo=TRUE}
+mkdir projects
 cd projects
 ```
+
 What will be printed to the screen if the student types pwd after executing the two lines of code shown above?
-- [ ] A. /Users/student/Documents
-- [X] B. /Users/student/Documents/projects
-- [ ] C. /Users/student
-- [ ] D. cd: projects: No such file or directory
 
-4. Moving Files 1
+- [ ] A. ```/Users/student/Documents```
+- [X] B. ```/Users/student/Documents/projects```
+- [ ] C. ```/Users/student```
+- [ ] D. ```cd: projects: No such file or directory```
 
-The following is the full path to a your homework assignment file called “assignment.txt”: 
-```
+4. Which of the following statements does NOT correctly describe the utility of a command in Unix?
+
+- [ ] A. The $q$ key exits the viewer when you use ```less``` to view a file.
+- [ ] B. The command ```ls``` lists files in the current directory.
+- [X] C. The command ```mkdir``` makes a new directory and moves into it.
+- [ ] D. The ```mv``` command can move a file and change the name of a file.
+
+5. The following is the full path to a your homework assignment file called “assignment.txt”: 
+
+```{r, eval=FALSE, echo=TRUE}
 /Users/student/Documents/projects/homeworks/assignment.txt
 ```
+
 Which line of code will allow you to move the assignment.txt file from the “homeworks” directory into the parent directory “projects”?
-- [ ] A. mv assignment.txt
-- [ ] B. mv assignment.txt .
-- [X] C. mv assignment.txt ..
-- [ ] D. mv assignment.txt /projects
 
-Note: Double dots .. mean “up a directory”, so mv assignment.txt .. moves the assignment text file into the NEXT highest directory, projects.
+- [ ] A. ```mv assignment.txt```
+- [ ] B. ```mv assignment.txt .```
+- [X] C. ```mv assignment.txt ..```
+- [ ] D. ```mv assignment.txt /projects```
 
-5. Moving Files 2
+6. You want to move a file called ```assignment.txt``` file into your ```projects``` directory. However, there is already a file called “assignment.txt” in the ```projects``` directory.
 
-You want to move a file called assignment.txt file into your projects directory. However, there is already a file called “assignment.txt” in the projects directory.
+What happens when you execute the “move” (```mv```) command to move the file into the new directory?
 
-What happens when you execute the “move” (mv) command to move the file into the new directory?
 - [X] A. The moved "assignment.txt" file replaces the old "assignment.txt" file that was in the "projects" directory with no warning.
 - [ ] B. An error message warns you that you are about to overwrite an existing file and asks if you want to proceed.
 - [ ] C. An error message tells you that a file already exists with that name and asks you to rename the new file.
 - [ ] D. The moved “assignment.txt” file is automatically renamed “assignment.txt (copy)” after it is moved into the “projects” directory.
 
-Note: Be careful when moving files around using the command line. Unix does not warn you before you overwrite a file
+## Comprehension Check Part 2
 
-### Working with Unix
-
-6. Unix Commands
-
-Which of the following statements does NOT correctly describe the utility of a command in Unix?
-- [ ] A. The q key exits the viewer when you use less to view a file.
-- [ ] B. The command ls lists files in the current directory.
-- [X] C. The command ```mkdir``` makes a new directory and moves into it.
-- [ ] D. The mv command can move a file and change the name of a file.
-
-7. What does each of ~, ., .., / represent, respectively?
+7. What does each of ```~```, ```.```, ```..```, ```/``` represent, respectively?
 
 - [ ] A. Current directory, Home directory, Root directory, Parent directory
 - [X] B. Home directory, Current directory, Parent directory, Root directory
