@@ -187,7 +187,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 - [ ] A. ```install.packages(c(“ggplot2”,“dplyr”))```
 - [ ] B. ```install.packages(“tidyverse”)```
 - [X] C. ```install.packages(c("dplyr","ggplot2”)```
-- [ ] D. ```install.packages(“ggplot2”) install.packages(“dplyr”)``
+- [ ] D. ```install.packages(“ggplot2”) install.packages(“dplyr”)```
 
 3. Which of the following is not true about installing packages? Select ALL that apply.
 
