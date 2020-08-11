@@ -603,25 +603,19 @@ $\text{```}$
 
 6. What is the final value from these three sequential Rmd code chunks?
 
-```
-```{r, eval=FALSE}
-a <- 2
-```
-```
+$\text{{r, eval=FALSE}}$
+$\text{a <- 2}$
+$\text{```}$
 
-```
-```{r, include=FALSE}
-print("Hello World!")
-a <- 5
-```
-```
+$\text{```{r, include=FALSE}}$
+$\text{print("Hello World!")}$
+$\text{a <- 5}$
+$\text{```}$
 
-```
-```{r, echo=FALSE}
-a <- a+1
-print(a)
-```
-```
+$\text{```{r, echo=FALSE}}$
+$\text{a <- a+1}$
+$\text{print(a)}$
+$\text{```}$
 
 - [ ] A. 2
 - [ ] B. 3
