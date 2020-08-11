@@ -717,6 +717,16 @@ print(a)```
 - [X] C. 6
 - [ ] D. 5
 
+## Section 4 Overview
+
+In this section on Git and GitHub, you will learn to clone and create version-controlled GitHub repositories using the command line. 
+
+There is a graded comprehension check at the end of the section.
+
+## Git and GitHub
+
+
+
 ## Git and GitHub
 
 <img width="646" alt="Schermafbeelding 2020-04-22 om 16 19 44" src="https://user-images.githubusercontent.com/17474099/79993546-2866e380-84b5-11ea-8c3e-24a859d624c6.png">
