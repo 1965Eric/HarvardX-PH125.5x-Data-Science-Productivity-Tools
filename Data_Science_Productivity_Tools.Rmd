@@ -161,8 +161,8 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 * In terminal: configure git 
 
-```git config --global user.name "Your Name"```
-```git config --global user.email "your@email.com"```
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
 
 * In RStudio, create project > Version control > Git
 * Git pane: status symbols and color
