@@ -1,7 +1,7 @@
 ---
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 urlcolor: blue
 ---
 
@@ -229,7 +229,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 10. Did you create a GitHub account? Enter your GitHub username below.
 
-```1965Eric```
+1965Eric
 
 ## Section 2 Overview
 
