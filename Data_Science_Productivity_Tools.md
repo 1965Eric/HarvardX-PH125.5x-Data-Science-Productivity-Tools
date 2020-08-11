@@ -671,6 +671,7 @@ Which of the following file types is NOT an option for the final output?
 - [ ] C. .doc
 - [ ] D. .html
 
+```
 ```{r, echo=F}
 n <- nrow(mtcars)```
 
@@ -685,7 +686,6 @@ Here `r n` cars are compared
 6. What is the final value from these three sequential Rmd code chunks?
 
 ```
-# a sample code chunk
 ```{r, eval=FALSE}
 a <- 2```
 ```
@@ -693,6 +693,7 @@ a <- 2```
 ```{r, include=FALSE}
 print("Hello World!")
 a <- 5```
+```
 ```
 ```{r, echo=FALSE}
 a <- a+1
