@@ -1,7 +1,7 @@
 ---
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 urlcolor: blue
 ---
 
@@ -229,7 +229,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 10. Did you create a GitHub account? Enter your GitHub username below.
 
-1965Eric
+`1965Eric`
 
 ## Section 2 Overview
 
@@ -243,8 +243,6 @@ Below, you will find a summary of Unix commands that will be covered in this sec
 
 ![Hypothetical file system](images/Hypothetical file system.png)
 
-\newpage
-
 ### Useful Unix Commands
 
 ![](images/Unix_commands_1.png)
@@ -257,7 +255,7 @@ Below, you will find a summary of Unix commands that will be covered in this sec
 
 A full path specifies the location of a file from the root directory. It is independent of your present directory, and must begin with either a “/” or a “~”. In this example, the full path to our “project-1” file is: 
 
-```/home/projects/project-1```
+`/home/projects/project-1`
 
 A relative path is the path relative to your present working directory. If our present working directory is the “projects” folder, then the relative path to our “project-1” file is simply: 
 
