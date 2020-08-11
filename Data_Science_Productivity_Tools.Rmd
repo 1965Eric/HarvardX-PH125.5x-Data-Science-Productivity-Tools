@@ -241,7 +241,7 @@ git config --global user.email "your@email.com"
 
 10. Did you create a GitHub account? Enter your GitHub username below.
 
-```1965Eric```
+1965Eric
 
 ## Section 2 Overview
 
