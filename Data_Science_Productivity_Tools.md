@@ -149,6 +149,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 * In terminal: configure git 
 
 ```git config --global user.name "Your Name"```
+
 ```git config --global user.email "your@email.com"```
 
 * In RStudio, create project > Version control > Git
@@ -171,14 +172,14 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 2. Select the code that will NOT install the popular graphing and data manipulation packages ```ggplot2``` and ```dplyr``` in R.
 
-- [ ] A. install.packages(c(“ggplot2”,“dplyr”))
-- [ ] B. install.packages(“tidyverse”)
-- [X] C. install.packages(c("dplyr","ggplot2”)
-- [ ] D. install.packages(“ggplot2”) install.packages(“dplyr”)
+- [ ] A. ```install.packages(c(“ggplot2”,“dplyr”))```
+- [ ] B. ```install.packages(“tidyverse”)```
+- [X] C. ```install.packages(c("dplyr","ggplot2”)```
+- [ ] D. ```install.packages(“ggplot2”) install.packages(“dplyr”)```
 
 3. Which of the following is not true about installing packages? Select ALL that apply.
 
-- [X] A. To install a new package, the install.packages() function can be used
+- [X] A. To install a new package, the ```install.packages()``` function can be used
 - [ ] B. To install a new package, the drop-down menu Tools > Install packages can be used
 - [ ] C. Installed packages will remain installed even if you upgrade R
 - [X] D. Installing a package by building from GitHub will give you the exact same version as on CRAN
@@ -228,7 +229,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 10. Did you create a GitHub account? Enter your GitHub username below.
 
-1965Eric
+```1965Eric```
 
 ## Section 2 Overview
 
