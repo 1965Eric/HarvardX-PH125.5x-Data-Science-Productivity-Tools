@@ -485,7 +485,7 @@ What will be printed to the screen if the student types pwd after executing the 
 /Users/student/Documents/projects/homeworks/assignment.txt
 ```
 
-Which line of code will allow you to move the assignment.txt file from the “homeworks” directory into the parent directory “projects”?
+Which line of code will allow you to move the assignment.txt file from the "homeworks" directory into the parent directory "projects"?
 
 - [ ] A. ```mv assignment.txt```
 - [ ] B. ```mv assignment.txt .```
@@ -581,24 +581,20 @@ Which of the following R chunks does everything you want it to do?
 
 Below is a section of R Markdown code that generates a report.
 
-```
----
-title: "Final Grade Distribution"
-output: pdf_document
----
-```{r, echo=FALSE}
-load(file="my_data.Rmd")
-summary(grades)
-```
-```
+$\text{---}$
+$\text{title: "Final Grade Distribution"}$
+$\text{output: pdf_document}$
+$\text{---}$
+$\text{```{r, echo=FALSE}}$
+$\text{load(file="my_data.Rmd")}$
+$\text{summary(grades)}$
+$\text{```}$
 
 4. 
 
-```
-```{r, echo=F}
-n <- nrow(mtcars)
-```
-```
+$\text{```{r, echo=F}}$
+$\text{n <- nrow(mtcars)}$
+$\text{```}$
 
 - [X] A. The only output is the text: Here 32 cars are compared.
 - [ ] B. Since we have echo=F, the code chunk is not evaluated, therefore we will have both the code and the text: Here `r n` cars are compared.
