@@ -9,7 +9,7 @@ urlcolor: blue
 
 The textbook for the Data Science course series is [freely available online](https://rafalab.github.io/dsbook/).
 
-## Learning Objectives
+# Learning Objectives
 
 * How to leverage the many useful features provided by RStudio
 * How to use Unix/Linux to manage your file system
@@ -49,7 +49,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 * Git and GitHub
 * R markdown
 
-## Section 1 Overview
+# Section 1 Overview
 
 The Installing Software section walks you through the steps to download and install R, RStudio, git (and git bash on Windows machines), create a GitHub account, and connect RStudio to GitHub.
 
@@ -231,7 +231,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 `1965Eric`
 
-## Section 2 Overview
+# Section 2 Overview
 
 The Unix section discusses the basics of managing your filesystem from the terminal with Unix commands such as `mv` and `rm`. 
 
@@ -541,7 +541,7 @@ Which R function should you write in `plotfig.R` in order to correctly produce a
 - [ ] C. Use ggsave to save generated files for use in a presentation or a report.
 - [X] D. Saving your code in a Word file and inserting output images is a good idea for making a reproducible report.
 
-## Section 3 Overview
+# Section 3 Overview
 
 The Reproducible Reports section guides you through how to create data science reports using R Markdown and the knitr package.
 
