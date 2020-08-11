@@ -1,9 +1,11 @@
 ---
+title: "Data Science Productivity Tools"
 output:
   html_document: default
   pdf_document: default
 urlcolor: blue
 ---
+
 The textbook for the Data Science course series is [freely available online](https://rafalab.github.io/dsbook/).
 
 ## Learning Objectives
