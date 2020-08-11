@@ -1,10 +1,11 @@
 ---
-title: "Data Science Productivity Tools"
 output:
   html_document: default
   pdf_document: default
 urlcolor: blue
 ---
+
+# Data Science Productivity Tools
 
 The textbook for the Data Science course series is [freely available online](https://rafalab.github.io/dsbook/).
 
@@ -80,12 +81,6 @@ We will install:
     * Run a single line of script: Ctrl+Enter on Windows and Command+Return on Mac while the cursor is pointing to that line, or select the chunk and click "run"
     * Open a new script: Ctrl+Shift+N on Windows and Command+Shift+N on Mac
 
-*Code*
-
-```
-library(tidyverse)
-```
-
 ## Keeping Organized with RStudio Projects
 
 The textbook for this section is available [here](https://rafalab.github.io/dsbook/reproducible-projects-with-rstudio-and-r-markdown.html#rstudio-projects)
@@ -153,8 +148,8 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 * In terminal: configure git 
 
-git config --global user.name "Your Name"
-git config --global user.email "your@email.com"
+```git config --global user.name "Your Name"```
+```git config --global user.email "your@email.com"```
 
 * In RStudio, create project > Version control > Git
 * Git pane: status symbols and color
