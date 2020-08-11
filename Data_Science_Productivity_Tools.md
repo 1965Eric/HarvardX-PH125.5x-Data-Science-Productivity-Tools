@@ -1,10 +1,10 @@
 ---
 title: "Data Science Productivity Tools"
 output:
+  html_document: default
+  word_document: default
   pdf_document:
     latex_engine: xelatex
-  word_document: default
-  html_document: default
 urlcolor: blue
 ---
 
@@ -84,9 +84,7 @@ We will install:
 
 *Code*
 
-```{r, eval=FALSE, echo=TRUE}
-if(!require(tidyverse)) install.packages("tidyverse")
-
+```
 library(tidyverse)
 ```
 
@@ -253,9 +251,9 @@ Below, you will find a summary of Unix commands that will be covered in this sec
 
 \newpage
 
-![Unix commands](images/Unix_commands_1.png)
+![](images/Unix_commands_1.png)
 
-![More Unix commands](images/Unix_commands_2.png)
+![](images/Unix_commands_2.png)
 
 \newpage
 
@@ -399,7 +397,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 * Use q to exit the ```less``` page
 * use the arrows to navigate in the ```less``` page
 
-*Code
+*Code*
 
 ```
 less cv.tex
@@ -577,20 +575,20 @@ Which of the following R chunks does everything you want it to do?
 
 Below is a section of R Markdown code that generates a report.
 
-$\text{---}$
-$\text{title: "Final Grade Distribution"}$
-$\text{output: pdf_document}$
-$\text{---}$
-$\text{```{r, echo=FALSE}}$
-$\text{load(file="my_data.Rmd")}$
-$\text{summary(grades)}$
-$\text{```}$
+---
+title: "Final Grade Distribution"
+output: pdf_document
+---
+```{r, echo=FALSE}
+load(file="my_data.Rmd")
+summary(grades)
+```
 
 4. 
 
-$\text{```{r, echo=F}}$
-$\text{n <- nrow(mtcars)}$
-$\text{```}$
+```{r, echo=F}
+n <- nrow(mtcars)
+```
 
 - [X] A. The only output is the text: Here 32 cars are compared.
 - [ ] B. Since we have echo=F, the code chunk is not evaluated, therefore we will have both the code and the text: Here `r n` cars are compared.
@@ -599,19 +597,19 @@ $\text{```}$
 
 6. What is the final value from these three sequential Rmd code chunks?
 
-$\text{{r, eval=FALSE}}$
-$\text{a <- 2}$
-$\text{```}$
+{r, eval=FALSE}
+a <- 2
+```
 
-$\text{```{r, include=FALSE}}$
-$\text{print("Hello World!")}$
-$\text{a <- 5}$
-$\text{```}$
+```{r, include=FALSE}
+print("Hello World!")
+a <- 5
+```
 
-$\text{```{r, echo=FALSE}}$
-$\text{a <- a+1}$
-$\text{print(a)}$
-$\text{```}$
+```{r, echo=FALSE}
+a <- a+1
+print(a)
+```
 
 - [ ] A. 2
 - [ ] B. 3
