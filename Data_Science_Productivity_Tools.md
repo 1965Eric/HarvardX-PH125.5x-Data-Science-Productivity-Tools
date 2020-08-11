@@ -541,30 +541,111 @@ Which R function should you write in `plotfig.R` in order to correctly produce a
 - [ ] C. Use ggsave to save generated files for use in a presentation or a report.
 - [X] D. Saving your code in a Word file and inserting output images is a good idea for making a reproducible report.
 
+## Section 3 Overview
+
+The Reproducible Reports section guides you through how to create data science reports using R Markdown and the knitr package.
+
+There is a graded comprehension check at the end of the section.
+
+We will use [this example GitHub repository](https://github.com/rairizarry/murders) throughout.
+
+## Reproducible Reports with R Markdown
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/reproducible-projects-with-rstudio-and-r-markdown.html)
+
+**Key points**
+
+* The final output is usually a report, textual descriptions and figures, and tables.
+* The aim is to generate a reproducible report in R markdown and knitr.
+* Features of Rmarkdown: code and text can be combined to the same document and figures and tables are automatically added to the file.
+
+## R Markdown
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/reproducible-projects-with-rstudio-and-r-markdown.html#r-markdown)
+
+**Other useful links**
+
+You can learn more about R Markdown at [markdowntutorial.com](https://www.markdowntutorial.com).
+
+The [code for the sample report](https://raw.githubusercontent.com/rairizarry/murders/master/report.Rmd) is available .
+
+**Key points**
+
+* R Markdown is a format for *literate programming* documents. Literate programming weaves instructions, documentation and detailed comments in between machine executable code, producing a document that describes the program that is best for human understanding.
+* Start an R markdown document by clicking on File > New File > the R Markdown
+* The output could be HTML, PDF, or Microsoft Word, which can be changed in the header output, e.g. pdf_document / html_document
+
+*Code*
+
+```
+# a sample code chunk
+```{r}
+summary(pressure)
+```
+```
+# When echo=FALSE, code will be hided in output file
+```{r echo=FALSE}
+summary(pressure)
+```
+```
+# use a descriptive name for each chunk for debugging purpose
+```{r pressure-summary}
+summary(pressure)
+```
+
+## knitr
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/reproducible-projects-with-rstudio-and-r-markdown.html#knitr)
+
+It also may be useful to explore the [RMarkdown website](https://rmarkdown.rstudio.com) and the [knitr website](https://yihui.org/knitr/).
+
+**Key points**
+
+* The **knitr** package is used to compile R markdown documents.
+* The first time you click the "knit" button on the editor pane a pop-up window will prompt you to install packages, but after that is completed, the button will automatically knit your document.
+* `github_document` gives a .md file, which will give the best presentation on GitHub
+
+*Code*
+
+```
+output: html_document 
+output: pdf_document 
+output: word_document
+output: github_document
+```
+
 ## Reproducible Reports
 
-1. Why R Markdown?
+1. Why might you want to create a report using R Markdown?
 
-Why might you want to create a report using R Markdown?
 - [ ] A. R Markdown has better spell-checking tools than other word processors.
 - [X] B. R Markdown allows you to automatically add figures to the final document.
 - [ ] C. R Markdown final reports have smaller file sizes than Word documents.
 - [ ] D. R Markdown documents look identical to the final report.
 
-2. Naming an R Chunk
-
-You have a vector of student heights called heights. You want to generate a histogram of these heights in a final report, but you don’t want the code to show up in the final report. You want to name the R chunk “histogram” so that you can easily find the chunk later.
+2. You have a vector of student heights called `heights`. You want to generate a histogram of these heights in a final report, but you don’t want the code to show up in the final report. You want to name the R chunk “histogram” so that you can easily find the chunk later.
 
 Which of the following R chunks does everything you want it to do?
-- [ ] A. /{r, histogram, echo=FALSE} hist(heights)
-- [ ] B. {r histogram} hist(heights)
-- [ ] C. {r, echo=FALSE} hist(heights)
-- [X] D. {r histogram, echo=FALSE} hist(heights)
 
-3. R Markdown Report
+- [ ] A.
 
-Below is a section of R Markdown code that generates a report.
+```{r, histogram, message=FALSE} hist(heights)```
 
+- [ ] B. 
+
+```{r histogram, warning=FALSE} hist(heights)```
+
+- [ ] C. 
+
+```{r, echo=FALSE} hist(heights)```
+
+- [X] D. 
+
+```{r histogram, echo=FALSE} hist(heights)```
+
+3. Below is a section of R Markdown code that generates a report.
+
+```
 ---
 title: "Final Grade Distribution"
 output: pdf_document
@@ -574,19 +655,36 @@ load(file="my_data.Rmd")
 summary(grades)
 ```
 
-4. 
+Select the statement that describes the file report generated by the R markdown code above.
+
+- [X] A. A PDF document called “Final Grade Distribution” that prints a summary of the “grades” object. The code to load the file and produce the summary will not be included in the final report.
+- [ ] B. A PDF document called “Final Grade Distribution” that prints a summary of the “grades” object. The code to load the file and produce the summary will be included in the final report.
+- [ ] C. An HTML document called “Final Grade Distribution” that prints a summary of the “grades” object. The code to load the file and produce the summary will not be included in the final report.
+- [ ] D. A PDF document called “Final Grade Distribution” that is empty because the argument `echo=FALSE` was used.
+
+4. The user specifies the output file format of the final report when using R Markdown.
+
+Which of the following file types is NOT an option for the final output?
+- [X] A. .rmd
+- [ ] B. .pdf
+- [ ] C. .doc
+- [ ] D. .html
 
 ```{r, echo=F}
 n <- nrow(mtcars)
 ```
+```
+Here `r n` cars are compared
+```
 
-- [X] A. The only output is the text: Here 32 cars are compared.
-- [ ] B. Since we have echo=F, the code chunk is not evaluated, therefore we will have both the code and the text: Here `r n` cars are compared.
-- [ ] C. The code will be displayed as well as Here 32 cars are compared.
+- [X] A. The only output is the text: `Here 32 cars are compared`.
+- [ ] B. Since we have `echo=F`, the code chunk is not evaluated, therefore we will have both the code and the text: `Here `r n` cars are compared`.
+- [ ] C. The code will be displayed as well as `Here 32 cars are compared`.
 - [ ] D. R cannot comprehend the value of n, we will get an error.
 
 6. What is the final value from these three sequential Rmd code chunks?
 
+```
 {r, eval=FALSE}
 a <- 2
 ```
@@ -598,7 +696,7 @@ a <- 5
 
 ```{r, echo=FALSE}
 a <- a+1
-print(a)
+print(a)```
 ```
 
 - [ ] A. 2
