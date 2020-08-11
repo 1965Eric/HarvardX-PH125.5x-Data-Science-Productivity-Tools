@@ -717,7 +717,7 @@ print(a)```
 - [X] C. 6
 - [ ] D. 5
 
-## Section 4 Overview
+# Section 4 Overview
 
 In this section on Git and GitHub, you will learn to clone and create version-controlled GitHub repositories using the command line. 
 
