@@ -629,19 +629,31 @@ Which of the following R chunks does everything you want it to do?
 
 - [ ] A.
 
-```{r, histogram, message=FALSE} hist(heights)```
+```
+```{r, histogram, message=FALSE} 
+hist(heights)```
+```
 
 - [ ] B. 
 
-```{r histogram, warning=FALSE} hist(heights)```
+```
+```{r histogram, warning=FALSE} 
+hist(heights)```
+```
 
 - [ ] C. 
 
-```{r, echo=FALSE} hist(heights)```
+```
+```{r, echo=FALSE} 
+hist(heights)```
+```
 
 - [X] D. 
 
-```{r histogram, echo=FALSE} hist(heights)```
+```
+```{r histogram, echo=FALSE} 
+hist(heights)```
+```
 
 3. Below is a section of R Markdown code that generates a report.
 
@@ -679,7 +691,7 @@ Here `r n` cars are compared
 ```
 
 - [X] A. The only output is the text: `Here 32 cars are compared`.
-- [ ] B. Since we have `echo=F`, the code chunk is not evaluated, therefore we will have both the code and the text: `Here `r n` cars are compared`.
+- [ ] B. Since we have `echo=F`, the code chunk is not evaluated, therefore we will have both the code and the text: `Here 'r n' cars are compared`.
 - [ ] C. The code will be displayed as well as `Here 32 cars are compared`.
 - [ ] D. R cannot comprehend the value of n, we will get an error.
 
