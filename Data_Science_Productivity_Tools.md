@@ -1011,8 +1011,8 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 **Key points**
 
-* * means any number of any combination of characters. Specifically, to list all html files: `ls *.html` and to remove all html files in a directory: `rm *.html`.
-* ? means any single character. For example, to erase all files in the  form `file-001.html` with the numbers going from 1 to 999: `rm file-???.html`.
+* `*` means any number of any combination of characters. Specifically, to list all html files: `ls *.html` and to remove all html files in a directory: `rm *.html`.
+* `?` means any single character. For example, to erase all files in the  form `file-001.html` with the numbers going from 1 to 999: `rm file-???.html`.
 * Combined wild cards: `rm file-001.*` to remove all files of the name file-001 regardless of suffix.
 * **Warning: Combining rm with the * wild card can be dangerous. There are combinations of these commands that will erase your entire file system without asking you for confirmation. Make sure you understand how it works before using this wild card with the rm command.**
 

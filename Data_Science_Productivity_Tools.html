@@ -1459,12 +1459,96 @@ E. git push</li>
 <p>In Section 5, you will learn additional useful Unix commands, including arguments, getting help, pipes, and wildcards that are all helpful in data science.</p>
 <p>There is a two-part graded comprehension check at the end of the section.</p>
 <div id="advanced-unix-arguments" class="section level2">
-<h2>Advanced Unix Arguments</h2>
+<h2>Advanced Unix: Arguments</h2>
+<p>The textbook for this section is available <a href="https://rafalab.github.io/dsbook/unix.html#arguments">here</a></p>
+<p><strong>Key points</strong></p>
+<ul>
+<li>Arguments typically are defined using a dash (<code>-</code>) or two dashes (<code>--</code>) followed by a letter of a word.</li>
+<li>r: recursive. For example, <code>rm -r &lt;directory-name&gt;</code>: remove all files, subdirectories, files in subdirectories, subdirectories in subdirectories, etc.</li>
+<li>Combine arguments: <code>rm -rf directory-name</code></li>
+<li><code>ls -a</code>: Shows all files in the directories including hidden files (e.g. <code>.git</code> file when initializing using <code>git init</code>) (a for all).</li>
+<li><code>ls -l</code>: Returns more information about the files (i.e. <code>l</code> for long).</li>
+<li><code>ls -t</code>: Shows files in chronological order.</li>
+<li><code>ls -r</code>: Reverses the order of how files are shown.</li>
+<li><code>ls -lart</code>: Shows more information for all files in reverse chronological order.</li>
+</ul>
+</div>
+<div id="advanced-unix-getting-help-and-pipes" class="section level2">
+<h2>Advanced Unix: Getting Help and Pipes</h2>
+<p>The textbook for this section is available <a href="https://rafalab.github.io/dsbook/unix.html#getting-help">here</a> and <a href="https://rafalab.github.io/dsbook/unix.html#pipes">here</a></p>
+<p><strong>Key Points</strong></p>
+<ul>
+<li>Getting Help: Use <code>man + command name</code> to get help (e.g. <code>man ls</code>). Note that it is not available for Git Bash. For Git Bash, you can use <code>command -- help</code> (e.g. <code>ls --help</code>).</li>
+<li>Pipes: Pipes the results of a command to the command after the pipe. Similar to the pipe %&gt;% in R. For example, <code>man ls | less</code> (and its equivalent in Git Bash: <code>ls --help | less</code>). Also useful when listing files with many files (e.g <code>ls -lart | less</code>).</li>
+</ul>
+</div>
+<div id="advanced-unix-wild-cards" class="section level2">
+<h2>Advanced Unix: Wild cards</h2>
+<p>The textbook for this section is available <a href="https://rafalab.github.io/dsbook/unix.html#wild-cards">here</a></p>
+<p><strong>Key points</strong></p>
+<ul>
+<li><code>*</code> means any number of any combination of characters. Specifically, to list all html files: <code>ls *.html</code> and to remove all html files in a directory: <code>rm *.html</code>.</li>
+<li><code>?</code> means any single character. For example, to erase all files in the form <code>file-001.html</code> with the numbers going from 1 to 999: <code>rm file-???.html</code>.</li>
+<li>Combined wild cards: <code>rm file-001.*</code> to remove all files of the name file-001 regardless of suffix.</li>
+<li><strong>Warning: Combining rm with the * wild card can be dangerous. There are combinations of these commands that will erase your entire file system without asking you for confirmation. Make sure you understand how it works before using this wild card with the rm command.</strong></li>
+</ul>
+</div>
+<div id="advanced-unix-environment-variables-and-shells" class="section level2">
+<h2>Advanced Unix: Environment Variables and Shells</h2>
+<p>The textbook for this section is available <a href="https://rafalab.github.io/dsbook/unix.html#environment-variables">here</a> and <a href="https://rafalab.github.io/dsbook/unix.html#shells">here</a></p>
+<p><strong>Key points</strong></p>
+<ul>
+<li>In Unix, variables are distinguished from other entities by adding a <code>$</code> in front. For example, the home directory is stored in <code>$HOME</code>.</li>
+<li>See home directory: <code>echo $HOME</code></li>
+<li>See them all: <code>env</code></li>
+<li>See what shell is being used: <code>echo $SHELL</code> (most common shell is <code>bash</code>)</li>
+<li>Change environmental variables: <em>(Don’t actually run this command though!)</em> <code>export PATH = /usr/bin/</code></li>
+</ul>
+</div>
+<div id="advanced-unix-executables-permissions-and-file-types" class="section level2">
+<h2>Advanced Unix: Executables, Permissions, and File Types</h2>
+<p>The textbook for this section is available <a href="https://rafalab.github.io/dsbook/unix.html#executables">here</a> and <a href="https://rafalab.github.io/dsbook/unix.html#permissions-and-file-types">here</a></p>
+<p><strong>Key points</strong></p>
+<ul>
+<li>In Unix, all programs are files. They are called executables. So, <code>ls</code>, <code>mv</code>, and <code>git</code> are all files.</li>
+<li>To find where these program files are, use <code>which</code> For example, <code>which git</code> would return <code>/usr/bin/git</code>.</li>
+<li>Type <code>ls /usr/bin</code> to see several executable files. There are other directories that hold program files (e.g. Application directory for Mac or Program Files directory in Windows).</li>
+<li>Type <code>echo $PATH</code> to see a list of directories separated by “:”.</li>
+<li>Type the full path to run the user-created executables (e.g <code>./my-ls</code>).</li>
+<li>Regular file -, directory d, executable x.</li>
+<li>This string also indicates the permission of the file: is it readable? writable? executable? Can other users on the system read the file? Can other users on the system edit the file? Can other users execute if the file is executable?</li>
+</ul>
+</div>
+<div id="advanced-unix-commands-you-should-learn" class="section level2">
+<h2>Advanced Unix: Commands You Should Learn</h2>
+<p>The textbook for this section is available <a href="https://rafalab.github.io/dsbook/unix.html#commands-you-should-learn">here</a></p>
+<p><strong>Key points</strong></p>
+<ul>
+<li>Be aware of common commands and know what they do.</li>
+<li><code>open/start</code> - On the mac <code>open filename</code> tries to figure out the right application of the filename and open it with that application. This is a very useful command. On Git Bash, you can try <code>start filename</code>. Try opening an R or Rmd file with <code>open</code> or <code>start</code>: it should open with RStudio.</li>
+<li><code>nano</code> - A bare-bones text editor.</li>
+<li><code>ln</code> - create a symbolic link. We do not recommend its use, but you should be familiar with it.</li>
+<li><code>tar</code> - archive files and subdirectories of a directory into one file.</li>
+<li><code>ssh</code> - connect to another computer.</li>
+<li><code>grep</code> - search for patterns in a file.</li>
+<li><code>awk/sed</code> - These are two very powerful commands that permit you to find specific strings in files and change them.</li>
+</ul>
+</div>
+<div id="comprehension-check-part-1---advanced-unix" class="section level2">
+<h2>Comprehension Check Part 1 - Advanced Unix</h2>
 <ol style="list-style-type: decimal">
-<li>Arguments</li>
+<li>What will the command <code>ls -lat</code> produce?</li>
 </ol>
-<p>What will the command ls -lat produce? - [X] A. A list of all file (names, sizes, and other information) arranged in chronological order with the most recently modified files at the top of the list. - [ ] B. A list of visible files (names, sizes, and other information) arranged in chronological order with the oldest files at the top of the list. - [ ] C. A list of all files (names only) arranged in chronological order with the oldest files at the top of the list. - [ ] D. A list of visible files (names only) arranged in chronological order with the most recent files at the top of the list.</p>
-<p>Note: The -l argument makes the list “long”, meaning that information other than just the filename will be provided. The -a argument says that you want to see “all” files, even the hidden ones. The -t argument sorts the list by time, with the most recent files at the top.</p>
+<ul class="task-list">
+<li><input type="checkbox" disabled checked></input>
+A. A list of all file (names, sizes, and other information) arranged in chronological order with the most recently modified files at the top of the list.</li>
+<li><input type="checkbox" disabled></input>
+B. A list of visible files (names, sizes, and other information) arranged in chronological order with the oldest files at the top of the list.</li>
+<li><input type="checkbox" disabled></input>
+C. A list of all files (names only) arranged in chronological order with the oldest files at the top of the list.</li>
+<li><input type="checkbox" disabled></input>
+D. A list of visible files (names only) arranged in chronological order with the most recent files at the top of the list.</li>
+</ul>
 <ol start="2" style="list-style-type: decimal">
 <li>What happens when you remove a directory using the command rm -r?</li>
 </ol>
