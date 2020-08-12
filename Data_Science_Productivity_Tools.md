@@ -1066,64 +1066,62 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 - [ ] C. A list of all files (names only) arranged in chronological order with the oldest files at the top of the list.
 - [ ] D. A list of visible files (names only) arranged in chronological order with the most recent files at the top of the list.
 
-2. What happens when you remove a directory using the command rm -r?
+2. What happens when you remove a directory using the command `rm -r`?
 
-- [ ] A. You cannot remove a directory using the rm command.
+- [ ] A. You cannot remove a directory using the `rm` command.
 - [X] B. You permanently remove the entire directory, including all files and subdirectories.
 - [ ] C. You move the entire directory to a trash folder, but it can be restored later.
 - [ ] D. You get a warning message asking if you want to proceed, then you delete the directory.
 
-Note: Use remove commands with caution in Unix. You can permanently delete entire directories with no warning.
+3. By default, the `head` command in Unix displays the first 10 lines of a specified file. You can change the number of lines using an argument that indicates the numeric value of the desired number of lines.
 
-3. Advanced Unix Getting Help and Pipes
+Which of the following commands displays only the first 6 lines of a manual for the `ls` command?
 
-By default, the head command in Unix displays the first 10 lines of a specified file. You can change the number of lines using an argument that indicates the numeric value of the desired number of lines.
+- [ ] A. `man ls -6 | head`
+- [ ] B. `head | man ls -6`
+- [ ] C. `head -6 | man ls`
+- [X] D. `man ls | head -6`
 
-Which of the following commands displays only the first 6 lines of a manual for the ls command?
-- [ ] A. man ls -6 | head
-- [ ] B. head | man ls -6
-- [ ] C. head -6 | man ls
-- [X] D. man ls | head -6
-
-4. Advanced Unix Wildcards
-
-You have a directory containing the following files.
+4. You have a directory containing the following files.
 
 data1.csv, data2.txt, data3.txt, Data8.csv, data13.csv, data18.txt, Data22.txt, Data34.csv
 
 Which command will list only all of the .txt files that have “data” in their name? Remember that commands are case-sensitive.
-- [ ] A. ls data*
-- [X] B. ls data*.txt
-- [ ] C. ls *.txt
-- [ ] D. ls data?.txt
+
+- [ ] A. `ls data*`
+- [X] B. `ls data*.txt`
+- [ ] C. `ls *.txt`
+- [ ] D. `ls data?.txt`
 
 5. You have a directory containing the following files.
 
 data1.csv, data2.txt, data3.txt, Data8.csv, data13.csv, data18.txt, Data22.txt, Data34.csv
 
 Which command will remove every file that begins with “D”?
-- [X] A. rm D*
-- [ ] B. rm D*.txt
-- [ ] C. ls D*
-- [ ] D. ls D*.txt
 
-6. Imagine you have multiple text files in the following directory: /Users/student/Documents/project.
+- [X] A. `rm D*`
+- [ ] B. `rm D*.txt`
+- [ ] C. `ls D*`
+- [ ] D. `ls D*.txt`
+
+6. Imagine you have multiple text files in the following directory: `/Users/student/Documents/project`.
 
 You enter the following commands in sequence:
+
 ```
 mkdir data
 mv *.txt data
 cd data
 ```
-What will be printed to the screen if you enter the ls command after executing the three lines of code shown above?
-- [ ] A. /Users/student/Documents/project/data
+
+What will be printed to the screen if you enter the `ls` command after executing the three lines of code shown above?
+- [ ] A. `/Users/student/Documents/project/data`
 - [X] B. The file names that were moved from the “project” directory into the “data” directory.
 - [ ] C. Nothing. You haven’t added anything to the new “data” directory yet.
 - [ ] D. The file names that remain in the “project” directory.
 
-7. Advanced Unix Environment Variables and Shells
+7. What does the command `echo $HOME` do?
 
-What does the command echo $HOME do?
 - [ ] A. Moves into to the home directory. 
 - [ ] B. Makes the current directory the home directory. 
 - [X] C. Prints the path to the home directory. 
@@ -1132,41 +1130,46 @@ What does the command echo $HOME do?
 8. Many systems operate using the Unix shell and command language, bash. Each time you start using bash, it executes the commands contained in a “dot” file. Your “dot” file may be called something like “.bash_profile” or “.bash_rc”.
 
 Which command will let you see your “dot” files?
-- [X] A. ls -a
-- [ ] B. ls bash*
-- [ ] C. head *bash*
-- [ ] D. ls -l
+
+- [X] A. `ls -a`
+- [ ] B. `ls bash*`
+- [ ] C. `head *bash*`
+- [ ] D. `ls -l`
 
 9. Your colleague was editing his “dot” files when something went wrong. He first noticed there was an issue when he tried to execute the following line of code:
-```
-ls
-```
+
+`ls`
+
 He received the following error:
-```
--bash: ls: command not found
-```
+
+`-bash: ls: command not found`
+
 What could have happened to cause this error?
-- [ ] A. He is trying to execute ls which is a bash command, but his system isn’t running bash as a shell.
-- [ ] B. The command ls doesn’t exist. He should be using the command ll.
-- [ ] C. He forgot to specify a file name to be listed. The command ls * should work.
-- [X] D. He changed the information contained in $PATH. Now the system cannot find the executable file for ls.
+
+- [ ] A. He is trying to execute `ls` which is a bash command, but his system isn’t running bash as a shell.
+- [ ] B. The command `ls` doesn’t exist. He should be using the command `ll`.
+- [ ] C. He forgot to specify a file name to be listed. The command `ls *` should work.
+- [X] D. He changed the information contained in $PATH. Now the system cannot find the executable file for `ls`.
 
 10. The bash profile in your home directory contains information that the bash shell runs each time you use it. You can customize the information in your bash profile to tell your system to do different things. For example, you can make an “alias”, which acts like a keyboard shortcut.
 
 Which line of code, when added to your bash profile, will let you print “seetop” to view the name, size, and file type of the 10 most recently added visible files?
-- [ ] A. alias seetop=’ls -lt’
-- [X] B. alias seetop=’ls -lt | head’
-- [ ] C. alias seetop=’ls -t | head’
-- [ ] D. alias seetop=’head | ls -l’
 
-11. The commands in the pipeline $ cat result.txt | grep "Harvard edX" | tee file2.txt | wc -l perform which of the following actions?
+- [ ] A. `alias seetop=’ls -lt’`
+- [X] B. `alias seetop=’ls -lt | head’`
+- [ ] C. `alias seetop=’ls -t | head’`
+- [ ] D. `alias seetop=’head | ls -l’
+
+## Comprehension Check Part 2
+
+11. The commands in the pipeline `$ cat result.txt | grep "Harvard edX" | tee file2.txt | wc -l` perform which of the following actions?
 
 - [ ] A. From result.txt, select lines containing “Harvard edX”, store them into file2.txt, and print all unique lines from result.txt.
 - [ ] B. From result.txt, select lines containing “Harvard edX”, and store them into file2.txt.
 - [X] C. From result.txt, select lines containing “Harvard edX”, store them into file2.txt, and print the total number of lines which were written to file2.txt.
 - [ ] D. From result.txt, select lines containing “Harvard edX”, store them into file2.txt, and print the number of times “Harvard edX” appears.
 
-12. How is git rebase used?
+12. How is `git rebase` used?
 
 - [ ] A. To switch branches or restore working tree files
 - [ ] B. Uses a binary search to find the commit that introduced a bug
@@ -1176,14 +1179,14 @@ Which line of code, when added to your bash profile, will let you print “seeto
 
 13. Which of the following statements is wrong about Advanced Unix Executables, Permissions, and File Types?
 
-- [X] A. In Unix, all programs are files/executables except for commands like ls, mv, and git.
-- [ ] B. which git allows a user to find the path to git.
+- [X] A. In Unix, all programs are files/executables except for commands like `ls`, `mv`, and `git`.
+- [ ] B. `which git` allows a user to find the path to git.
 - [ ] C. When users create executable files themselves, they cannot be run just by typing the command - the full path must be typed instead.
-- [ ] D. ls -l can be used to inspect the permissions of each file.
+- [ ] D. `ls -l` can be used to inspect the permissions of each file.
 
-14. Which of the following commands correctly copies all files which are named as file-???.r (e.g file-abc.r, file-qwe.r, file-123.r) into the directory named your_directory?
+14. Which of the following commands correctly copies all files which are named as `file-???.r` (e.g `file-abc.r`, `file-qwe.r`, `file-123.r`) into the directory named `your_directory`?
 
-- [X] A. cp file-???.r ./your_directory
-- [ ] B. cp file-*.r ./your directory
-- [ ] C. cp file-[a-z].r ./your_directory
-- [ ] D. cp file-???.* ./your_directory
+- [X] A. `cp file-???.r ./your_directory`
+- [ ] B. `cp file-*.r ./your directory`
+- [ ] C. `cp file-[a-z].r ./your_directory`
+- [ ] D. `cp file-???.* ./your_directory`
