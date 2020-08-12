@@ -1,7 +1,8 @@
 ---
 output:
-  pdf_document: default
+  word_document: default
   html_document: default
+  pdf_document: default
 urlcolor: blue
 ---
 
@@ -1158,7 +1159,7 @@ Which line of code, when added to your bash profile, will let you print “seeto
 - [ ] A. `alias seetop=’ls -lt’`
 - [X] B. `alias seetop=’ls -lt | head’`
 - [ ] C. `alias seetop=’ls -t | head’`
-- [ ] D. `alias seetop=’head | ls -l’
+- [ ] D. `alias seetop=’head | ls -l’`
 
 ## Comprehension Check Part 2
 

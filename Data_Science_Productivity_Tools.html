@@ -1550,11 +1550,11 @@ C. A list of all files (names only) arranged in chronological order with the old
 D. A list of visible files (names only) arranged in chronological order with the most recent files at the top of the list.</li>
 </ul>
 <ol start="2" style="list-style-type: decimal">
-<li>What happens when you remove a directory using the command rm -r?</li>
+<li>What happens when you remove a directory using the command <code>rm -r</code>?</li>
 </ol>
 <ul class="task-list">
 <li><input type="checkbox" disabled></input>
-A. You cannot remove a directory using the rm command.</li>
+A. You cannot remove a directory using the <code>rm</code> command.</li>
 <li><input type="checkbox" disabled checked></input>
 B. You permanently remove the entire directory, including all files and subdirectories.</li>
 <li><input type="checkbox" disabled></input>
@@ -1562,52 +1562,121 @@ C. You move the entire directory to a trash folder, but it can be restored later
 <li><input type="checkbox" disabled></input>
 D. You get a warning message asking if you want to proceed, then you delete the directory.</li>
 </ul>
-<p>Note: Use remove commands with caution in Unix. You can permanently delete entire directories with no warning.</p>
 <ol start="3" style="list-style-type: decimal">
-<li>Advanced Unix Getting Help and Pipes</li>
+<li>By default, the <code>head</code> command in Unix displays the first 10 lines of a specified file. You can change the number of lines using an argument that indicates the numeric value of the desired number of lines.</li>
 </ol>
-<p>By default, the head command in Unix displays the first 10 lines of a specified file. You can change the number of lines using an argument that indicates the numeric value of the desired number of lines.</p>
-<p>Which of the following commands displays only the first 6 lines of a manual for the ls command? - [ ] A. man ls -6 | head - [ ] B. head | man ls -6 - [ ] C. head -6 | man ls - [X] D. man ls | head -6</p>
+<p>Which of the following commands displays only the first 6 lines of a manual for the <code>ls</code> command?</p>
+<ul class="task-list">
+<li><input type="checkbox" disabled></input>
+A. <code>man ls -6 | head</code></li>
+<li><input type="checkbox" disabled></input>
+B. <code>head | man ls -6</code></li>
+<li><input type="checkbox" disabled></input>
+C. <code>head -6 | man ls</code></li>
+<li><input type="checkbox" disabled checked></input>
+D. <code>man ls | head -6</code></li>
+</ul>
 <ol start="4" style="list-style-type: decimal">
-<li>Advanced Unix Wildcards</li>
+<li>You have a directory containing the following files.</li>
 </ol>
-<p>You have a directory containing the following files.</p>
 <p>data1.csv, data2.txt, data3.txt, Data8.csv, data13.csv, data18.txt, Data22.txt, Data34.csv</p>
-<p>Which command will list only all of the .txt files that have “data” in their name? Remember that commands are case-sensitive. - [ ] A. ls data<em> - [X] B. ls data</em>.txt - [ ] C. ls *.txt - [ ] D. ls data?.txt</p>
+<p>Which command will list only all of the .txt files that have “data” in their name? Remember that commands are case-sensitive.</p>
+<ul class="task-list">
+<li><input type="checkbox" disabled></input>
+A. <code>ls data*</code></li>
+<li><input type="checkbox" disabled checked></input>
+B. <code>ls data*.txt</code></li>
+<li><input type="checkbox" disabled></input>
+C. <code>ls *.txt</code></li>
+<li><input type="checkbox" disabled></input>
+D. <code>ls data?.txt</code></li>
+</ul>
 <ol start="5" style="list-style-type: decimal">
 <li>You have a directory containing the following files.</li>
 </ol>
 <p>data1.csv, data2.txt, data3.txt, Data8.csv, data13.csv, data18.txt, Data22.txt, Data34.csv</p>
-<p>Which command will remove every file that begins with “D”? - [X] A. rm D<em> - [ ] B. rm D</em>.txt - [ ] C. ls D<em> - [ ] D. ls D</em>.txt</p>
+<p>Which command will remove every file that begins with “D”?</p>
+<ul class="task-list">
+<li><input type="checkbox" disabled checked></input>
+A. <code>rm D*</code></li>
+<li><input type="checkbox" disabled></input>
+B. <code>rm D*.txt</code></li>
+<li><input type="checkbox" disabled></input>
+C. <code>ls D*</code></li>
+<li><input type="checkbox" disabled></input>
+D. <code>ls D*.txt</code></li>
+</ul>
 <ol start="6" style="list-style-type: decimal">
-<li>Imagine you have multiple text files in the following directory: /Users/student/Documents/project.</li>
+<li>Imagine you have multiple text files in the following directory: <code>/Users/student/Documents/project</code>.</li>
 </ol>
 <p>You enter the following commands in sequence:</p>
 <pre><code>mkdir data
 mv *.txt data
 cd data</code></pre>
-<p>What will be printed to the screen if you enter the ls command after executing the three lines of code shown above? - [ ] A. /Users/student/Documents/project/data - [X] B. The file names that were moved from the “project” directory into the “data” directory. - [ ] C. Nothing. You haven’t added anything to the new “data” directory yet. - [ ] D. The file names that remain in the “project” directory.</p>
+<p>What will be printed to the screen if you enter the <code>ls</code> command after executing the three lines of code shown above? - [ ] A. <code>/Users/student/Documents/project/data</code> - [X] B. The file names that were moved from the “project” directory into the “data” directory. - [ ] C. Nothing. You haven’t added anything to the new “data” directory yet. - [ ] D. The file names that remain in the “project” directory.</p>
 <ol start="7" style="list-style-type: decimal">
-<li>Advanced Unix Environment Variables and Shells</li>
+<li>What does the command <code>echo $HOME</code> do?</li>
 </ol>
-<p>What does the command echo <span class="math inline">\(HOME do? - [ ] A. Moves into to the home directory. - [ ] B. Makes the current directory the home directory. - [X] C. Prints the path to the home directory. - [ ] D. Prints “\)</span>HOME” to the screen.</p>
+<ul class="task-list">
+<li><input type="checkbox" disabled></input>
+A. Moves into to the home directory.</li>
+<li><input type="checkbox" disabled></input>
+B. Makes the current directory the home directory.</li>
+<li><input type="checkbox" disabled checked></input>
+C. Prints the path to the home directory.</li>
+<li><input type="checkbox" disabled></input>
+D. Prints “$HOME” to the screen.</li>
+</ul>
 <ol start="8" style="list-style-type: decimal">
 <li>Many systems operate using the Unix shell and command language, bash. Each time you start using bash, it executes the commands contained in a “dot” file. Your “dot” file may be called something like “.bash_profile” or “.bash_rc”.</li>
 </ol>
-<p>Which command will let you see your “dot” files? - [X] A. ls -a - [ ] B. ls bash<em> - [ ] C. head </em>bash* - [ ] D. ls -l</p>
+<p>Which command will let you see your “dot” files?</p>
+<ul class="task-list">
+<li><input type="checkbox" disabled checked></input>
+A. <code>ls -a</code></li>
+<li><input type="checkbox" disabled></input>
+B. <code>ls bash*</code></li>
+<li><input type="checkbox" disabled></input>
+C. <code>head *bash*</code></li>
+<li><input type="checkbox" disabled></input>
+D. <code>ls -l</code></li>
+</ul>
 <ol start="9" style="list-style-type: decimal">
 <li>Your colleague was editing his “dot” files when something went wrong. He first noticed there was an issue when he tried to execute the following line of code:</li>
 </ol>
-<pre><code>ls</code></pre>
+<p><code>ls</code></p>
 <p>He received the following error:</p>
-<pre><code>-bash: ls: command not found</code></pre>
-<p>What could have happened to cause this error? - [ ] A. He is trying to execute ls which is a bash command, but his system isn’t running bash as a shell. - [ ] B. The command ls doesn’t exist. He should be using the command ll. - [ ] C. He forgot to specify a file name to be listed. The command ls * should work. - [X] D. He changed the information contained in $PATH. Now the system cannot find the executable file for ls.</p>
+<p><code>-bash: ls: command not found</code></p>
+<p>What could have happened to cause this error?</p>
+<ul class="task-list">
+<li><input type="checkbox" disabled></input>
+A. He is trying to execute <code>ls</code> which is a bash command, but his system isn’t running bash as a shell.</li>
+<li><input type="checkbox" disabled></input>
+B. The command <code>ls</code> doesn’t exist. He should be using the command <code>ll</code>.</li>
+<li><input type="checkbox" disabled></input>
+C. He forgot to specify a file name to be listed. The command <code>ls *</code> should work.</li>
+<li><input type="checkbox" disabled checked></input>
+D. He changed the information contained in $PATH. Now the system cannot find the executable file for <code>ls</code>.</li>
+</ul>
 <ol start="10" style="list-style-type: decimal">
 <li>The bash profile in your home directory contains information that the bash shell runs each time you use it. You can customize the information in your bash profile to tell your system to do different things. For example, you can make an “alias”, which acts like a keyboard shortcut.</li>
 </ol>
-<p>Which line of code, when added to your bash profile, will let you print “seetop” to view the name, size, and file type of the 10 most recently added visible files? - [ ] A. alias seetop=’ls -lt’ - [X] B. alias seetop=’ls -lt | head’ - [ ] C. alias seetop=’ls -t | head’ - [ ] D. alias seetop=’head | ls -l’</p>
+<p>Which line of code, when added to your bash profile, will let you print “seetop” to view the name, size, and file type of the 10 most recently added visible files?</p>
+<ul class="task-list">
+<li><input type="checkbox" disabled></input>
+A. <code>alias seetop=’ls -lt’</code></li>
+<li><input type="checkbox" disabled checked></input>
+B. <code>alias seetop=’ls -lt | head’</code></li>
+<li><input type="checkbox" disabled></input>
+C. <code>alias seetop=’ls -t | head’</code></li>
+<li><input type="checkbox" disabled></input>
+D. <code>alias seetop=’head | ls -l’</code></li>
+</ul>
+</div>
+<div id="comprehension-check-part-2-1" class="section level2">
+<h2>Comprehension Check Part 2</h2>
 <ol start="11" style="list-style-type: decimal">
-<li>The commands in the pipeline $ cat result.txt | grep “Harvard edX” | tee file2.txt | wc -l perform which of the following actions?</li>
+<li>The commands in the pipeline <code>$ cat result.txt | grep &quot;Harvard edX&quot; | tee file2.txt | wc -l</code> perform which of the following actions?</li>
 </ol>
 <ul class="task-list">
 <li><input type="checkbox" disabled></input>
@@ -1620,7 +1689,7 @@ C. From result.txt, select lines containing “Harvard edX”, store them into f
 D. From result.txt, select lines containing “Harvard edX”, store them into file2.txt, and print the number of times “Harvard edX” appears.</li>
 </ul>
 <ol start="12" style="list-style-type: decimal">
-<li>How is git rebase used?</li>
+<li>How is <code>git rebase</code> used?</li>
 </ol>
 <ul class="task-list">
 <li><input type="checkbox" disabled></input>
@@ -1639,26 +1708,26 @@ E. To download objects and refs from another repository</li>
 </ol>
 <ul class="task-list">
 <li><input type="checkbox" disabled checked></input>
-A. In Unix, all programs are files/executables except for commands like ls, mv, and git.</li>
+A. In Unix, all programs are files/executables except for commands like <code>ls</code>, <code>mv</code>, and <code>git</code>.</li>
 <li><input type="checkbox" disabled></input>
-B. which git allows a user to find the path to git.</li>
+B. <code>which git</code> allows a user to find the path to git.</li>
 <li><input type="checkbox" disabled></input>
 C. When users create executable files themselves, they cannot be run just by typing the command - the full path must be typed instead.</li>
 <li><input type="checkbox" disabled></input>
-D. ls -l can be used to inspect the permissions of each file.</li>
+D. <code>ls -l</code> can be used to inspect the permissions of each file.</li>
 </ul>
 <ol start="14" style="list-style-type: decimal">
-<li>Which of the following commands correctly copies all files which are named as file-???.r (e.g file-abc.r, file-qwe.r, file-123.r) into the directory named your_directory?</li>
+<li>Which of the following commands correctly copies all files which are named as <code>file-???.r</code> (e.g <code>file-abc.r</code>, <code>file-qwe.r</code>, <code>file-123.r</code>) into the directory named <code>your_directory</code>?</li>
 </ol>
 <ul class="task-list">
 <li><input type="checkbox" disabled checked></input>
-A. cp file-???.r ./your_directory</li>
+A. <code>cp file-???.r ./your_directory</code></li>
 <li><input type="checkbox" disabled></input>
-B. cp file-*.r ./your directory</li>
+B. <code>cp file-*.r ./your directory</code></li>
 <li><input type="checkbox" disabled></input>
-C. cp file-[a-z].r ./your_directory</li>
+C. <code>cp file-[a-z].r ./your_directory</code></li>
 <li><input type="checkbox" disabled></input>
-D. cp file-???.* ./your_directory</li>
+D. <code>cp file-???.* ./your_directory</code></li>
 </ul>
 </div>
 </div>
