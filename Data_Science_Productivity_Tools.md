@@ -750,7 +750,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 Explore the [discussed repository](https://github.com/rairizarry/murders)
 
-![Git stages](images\Git stages.png)
+![Git stages](images/Git stages.png)
 
 **Key points**
 
@@ -827,9 +827,9 @@ git push    # you may need to add these arguments the first time: --set-upstream
 
 2. Select the steps necessary to:
 
-1. Create a directory called “project-clone”,
-2. Clone the contents of a git repo at the following URL into that directory `https://github.com/user123/repo123.git`, and
-3. List the contents of the cloned repo.
+  * Create a directory called “project-clone”,
+  * Clone the contents of a git repo at the following URL into that directory `https://github.com/user123/repo123.git`, and
+  * List the contents of the cloned repo.
 
 - [ ] A.
 
