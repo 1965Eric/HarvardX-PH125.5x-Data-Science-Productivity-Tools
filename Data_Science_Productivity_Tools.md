@@ -614,7 +614,7 @@ output: word_document
 output: github_document
 ```
 
-## Reproducible Reports
+## Comprehension Check - Reproducible Reports
 
 1. Why might you want to create a report using R Markdown?
 
@@ -725,45 +725,137 @@ There is a graded comprehension check at the end of the section.
 
 ## Git and GitHub
 
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#why-use-git-and-github)
 
+**Additional Git and GitHub resources**
 
-## Git and GitHub
+* [Codecademy](https://www.codecademy.com/learn/learn-git)
+* [GitHub Guides](https://guides.github.com/activities/hello-world/)
+* [Try Git tutorial](https://try.github.io)
+* [Happy Git and GitHub for the useR](https://happygitwithr.com)
 
-<img width="646" alt="Schermafbeelding 2020-04-22 om 16 19 44" src="https://user-images.githubusercontent.com/17474099/79993546-2866e380-84b5-11ea-8c3e-24a859d624c6.png">
+**Key points**
 
-1. Git and GitHub Benefits
+* Next, we will learn how to use Git and GitHub in the command line.
+* Reasons to use Git and GitHub:
+	1. Version-control: Permits us to keep track of changes we made to code, to revert back to previous versions of files, to test ideas using new branches and decide if we want to merge to the original.
+	2. Collaboration: On a centralized repo, multiple people may make changes to the code and keep versions synced. A pull request allows anyone to suggest changes to your code.
+	3. Sharing code
+* To effectively permit version control and collaboration, files move across four different areas: Working Directory, Staging Area, Local Repository, and Upstream Repository.
+* Start your Git journey with either cloning an existing repo, or initializing a new one
 
-Which statement describes reasons why we recommend using git and Github when working on data analysis projects?
+## Using Git at the Command Line
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#git-overview)
+
+Explore the [discussed repository](https://github.com/rairizarry/murders)
+
+![Git stages](images\Git stages.png)
+
+**Key points**
+
+* Recap: there are four stages: working directory, staging area, local repository, and upstream repository
+* Clone an existing upstream repository (copy repo url from clone button, and type `"git clone <url>")`, and all three local stages are the same as upstream remote.
+* The working directory is the same as the working directory in Rstudio. When we edit files we only change the files in this place.
+* `git status`: tells how the files in the working directory are related to the files in other stages
+* edits in the staging area are not tracked by the version control system by default - we add a file to the staging area by `git add` command
+* `git commit`: to commit files from the staging area to local repository, we need to add a message stating what we are doing by `git commit -m "something"`
+* `git log`: keeps track of all the changes we have made to the local repository
+* `git push`: allows moving from the local repository to upstream repository, only if you have the permission (e.g. if it is yours)
+* `git fetch`: update local repository to  be like the upstream repository, from upstream to local
+* `git merge`: make the updated local sync with the working directory and staging area
+* To change everything in one shot (from upstream to working dir), use `git pull` (equivalent to combining `git fetch + git merge`)
+
+*Code*
+
+```
+pwd
+mkdir git-example
+cd git-example
+git clone https://github.com/rairizarry/murders.git
+cd murders
+ls
+git status
+echo "test" >> new-file.txt
+echo "temporary" >> tmp.txt
+git add new-file.txt
+git status
+git commit -m "adding a new file" 
+git status
+echo "adding a second line" >> new-file.txt
+git commit -m "minor change to new-file" new-file.txt
+git status
+git add
+git log new-file.txt
+git push
+git fetch
+git merge
+```
+
+## Creating a GitHub Repository
+
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#init)
+
+**Key points**
+
+* Recap: two ways to get started, one is cloning an existing repository, the other is initializing our own
+* Create our own project on our computer (independent of Git) on our own machine
+* Create an upstream repo on Github, copy repo's url
+* Make a local git repository: On the local machine, in the project directory, use `git init`. Now git starts tracking everything in the local repo.
+* Now we need to start moving files into our local repo and connect local repo to the upstream remote by  `git remote add origin <url>`
+* **Note:** The first time you push to a new repository, you may also need to use these git push options: `git push --set-upstream origin master`. If you need to run these arguments but forget to do so, you will get an error with a reminder.
+
+*Code*
+
+```
+cd ~/projects/murders
+git init
+git add README.txt
+git commit -m "First commit. Adding README.txt file just to get started"
+git remote add origin "https://github.com/rairizarry/murders.git"
+git push    # you may need to add these arguments the first time: --set-upstream origin master
+```
+
+## Comprehension Check - Git and GitHub
+
+1. Which statement describes reasons why we recommend using git and Github when working on data analysis projects?
+
 - [ ] A. Git and Github facilitate fast, high-throughput analysis of large data sets.
 - [X] B. Git and Github allow easy version control, collaboration, and resource sharing.
 - [ ] C. Git and Github have graphical interfaces that make it easy to learn to code in R.
 - [ ] D. Git and Github is good for long-term storage of private data.
 
-2. Using Git at the Command Line
+2. Select the steps necessary to:
 
-Select the steps necessary to:
-1. create a directory called “project-clone”,
-2. clone the contents of a git repo at the following URL into that directory (https://github.com/user123/repo123.git), and
-3. list the contents of the cloned repo.
+1. Create a directory called “project-clone”,
+2. Clone the contents of a git repo at the following URL into that directory `https://github.com/user123/repo123.git`, and
+3. List the contents of the cloned repo.
+
 - [ ] A.
+
 ```
 mkdir project-clone
 git add https://github.com/user123/repo123.git
 ls
 ```
+
 - [ ] B.
+
 ```
 mkdir project-clone
 git clone https://github.com/user123/repo123.git
 ls
 ```
+
 - [X] C.
+
 ```
 mkdir project-clone
 cd project-clone
 git clone https://github.com/user123/repo123.git
 ls
 ```
+
 - [ ] D.
 ```
 mkdir project-clone
@@ -771,42 +863,44 @@ cd project-clone
 git clone https://github.com/user123/repo123.git
 less
 ```
-3. Git Status
 
-You have successfully cloned a Github repository onto your local system. The cloned repository contains a file called “heights.txt” that lists the heights of students in a class. One student was missing from the dataset, so you add that student’s height using the following command:
-```
-echo “165” >> heights.txt
-```
-Next you enter the command git status to check the status of the Github repository.
+3. You have successfully cloned a Github repository onto your local system. 
+
+The cloned repository contains a file called “heights.txt” that lists the heights of students in a class. One student was missing from the dataset, so you add that student’s height using the following command:
+
+`echo “165” >> heights.txt`
+
+Next you enter the command `git status` to check the status of the Github repository.
 
 What message is returned and what does it mean?
-- [X] A. modified: heights.txt, no changes added to commit This message means that the heights.txt file was modified, but the changes have not been staged or committed to the local repository.
-- [ ] B. modified: heights.txt, no changes added to commit This message means that the heights.txt file was modified and staged, but not yet committed.
-- [ ] C. 1 file changed This message means that the heights.txt file was modified, staged, committed, and pushed to the upstream repository.
-- [ ] D. modified: heights.txt This message means that the heights.txt file was modified, staged, and committed.
 
-4. Modifying a File in an Upstream Repo
+- [X] A. `modified: heights.txt, no changes added to commit`. This message means that the heights.txt file was modified, but the changes have not been staged or committed to the local repository.
+- [ ] B. `modified: heights.txt, no changes added to commit`. This message means that the heights.txt file was modified and staged, but not yet committed.
+- [ ] C. `1 file changed`. This message means that the heights.txt file was modified, staged, committed, and pushed to the upstream repository.
+- [ ] D. `modified: heights.txt`. This message means that the heights.txt file was modified, staged, and committed.
 
-You cloned your own repository and modified a file within it on your local system. Next, you executed the following series of commands to include the modified file in the upstream repository, but it didn’t work. Here is the code you typed:
+4. You cloned your own repository and modified a file within it on your local system. 
+
+Next, you executed the following series of commands to include the modified file in the upstream repository, but it didn’t work. Here is the code you typed:
+
 ```
 git add modified_file.txt
 git commit -m “minor changes to file” modified_file.txt
 git pull
 ```
+
 What is preventing the modified file from being added to the upstream repository?
+
 - [ ] A. The wrong option is being used to add a descriptive message to the commit.
-- [X] B. git push should be used instead of git pull.
-- [ ] C. git commit should come before git add.
-- [ ] D. The git pull command line needs to include the file name.
+- [X] B. `git push` should be used instead of `git pull`.
+- [ ] C. `git commit` should come before `git add`.
+- [ ] D. The `git pull` command line needs to include the file name.
 
-5. Creating a GitHub Repository Readme File
-
-You have a directory of scripts and data files on your computer that you want to share with collaborators using GitHub. You create a new repository on your GitHub account called “repo123” that has the following URL: 
-```
-https://github.com/user123/repo123.git
-```
+5. You have a directory of scripts and data files on your computer that you want to share with collaborators using GitHub. You create a new repository on your GitHub account called “repo123” that has the following URL: `https://github.com/user123/repo123.git`
 Which of the following sequences of commands will convert the directory on your computer to a Github directory and create and add a descriptive “read me” file to the new repository?
+
 - [ ] A.
+
 ```
 git init
 git add README.txt
@@ -814,6 +908,7 @@ git commit -m "First commit. Adding README file."
 git remote add origin `https://github.com/user123/repo123.git`
 git push
 ```
+
 - [ ] B.
 
 ```
@@ -824,6 +919,7 @@ git commit -m "First commit. Adding README file."
 git remote add origin `https://github.com/user123/repo123.git`
 git push
 ```
+
 - [ ] C.
 
 ```
@@ -834,6 +930,7 @@ git commit -m "First commit. Adding README file."
 git remote add origin `https://github.com/user123/repo123.git`
 git pull
 ```
+
 - [X] D.
 
 ```
@@ -847,8 +944,10 @@ git push
 
 6. You have made a local change to a file in your R project, which is associated with a GitHub repository. You add your changes and push, but you receive a message:
 
-```Everything up-to-date```
+`Everything up-to-date`
+
 Which of the following commands did you forget to do?
+
 - [ ] A. git pull
 - [ ] B. git merge
 - [ ] C. git add
@@ -857,7 +956,8 @@ Which of the following commands did you forget to do?
 - [ ] F. git push
 - [ ] G. git rebase
 
-7. Suppose you previously cloned a repository with git clone. Running git status shows:
+7. Suppose you previously cloned a repository with `git clone`. Running git status shows:
+
 ```
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -868,11 +968,18 @@ Your branch is up to date with 'origin/master'.
 However, you know that there are some changes in the upstream repository.
 
 How will you sync these changes with one command?
+
 - [ ] A. git fetch
 - [X] B. git pull
 - [ ] C. git merge origin/master
 - [ ] D. git merge upstream/master
 - [ ] E. git push
+
+# Section 5 Overview
+
+In Section 5, you will learn additional useful Unix commands, including arguments, getting help, pipes, and wildcards that are all helpful in data science.
+
+There is a two-part graded comprehension check at the end of the section.
 
 ## Advanced Unix Arguments
 
