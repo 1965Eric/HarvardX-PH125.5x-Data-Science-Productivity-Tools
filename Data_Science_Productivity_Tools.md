@@ -1,14 +1,14 @@
 ---
 output:
   word_document: default
-  html_document: default
   pdf_document: default
+  html_document: default
 urlcolor: blue
 ---
 
 # Data Science Productivity Tools
 
-The textbook for the Data Science course series is [freely available online](https://rafalab.github.io/dsbook/).
+The textbook for the Data Science course series is [freely available online](https://rafalab.github.io/dsbook/){target="_blank"}.
 
 # Learning Objectives
 
@@ -36,7 +36,7 @@ You will learn other Unix commands, including arguments, getting help, pipes, an
 
 ## Introduction to Productivity Tools
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/introduction-to-productivity-tools.html)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/introduction-to-productivity-tools.html){target="_blank"}.
 
 **General Guiding Principles:**
 
@@ -60,7 +60,7 @@ If you get stuck, we encourage you to search the discussion boards for the answe
 
 ## Installing Software
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/introduction-to-productivity-tools.html)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/introduction-to-productivity-tools.html){target="_blank"}.
 
 **Key points**
 
@@ -84,7 +84,7 @@ We will install:
 
 ## Keeping Organized with RStudio Projects
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/reproducible-projects-with-rstudio-and-r-markdown.html#rstudio-projects)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/reproducible-projects-with-rstudio-and-r-markdown.html#rstudio-projects){target="_blank"}.
 
 **Key points**
 
@@ -105,11 +105,11 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 * If you have a **Windows machine**, you will need to install **Git and Git Bash**.
 * If you have a **Mac**, you will only need to install Git (which may already be installed on your system).
 
-The textbook for this section is available [here (for Windows)](https://rafalab.github.io/dsbook/accessing-the-terminal-and-installing-git.html#installing-git-and-git-bash-on-windows) or [here (for Mac)](https://rafalab.github.io/dsbook/accessing-the-terminal-and-installing-git.html#installing-git-on-the-mac)
+The textbook for this section is available [here (for Windows)](https://rafalab.github.io/dsbook/accessing-the-terminal-and-installing-git.html#installing-git-and-git-bash-on-windows){target="_blank"} or [here (for Mac)](https://rafalab.github.io/dsbook/accessing-the-terminal-and-installing-git.html#installing-git-on-the-mac){target="_blank"}.
 
 **Install on Windows**
 
-1. Download Git bash from [here](https://git-scm.com/)
+1. Download Git bash from [here](https://git-scm.com/){target="_blank"}.
 2. When asked to choose the default editor for Git, we recommend choosing nano if you do not already know VIM.
 3. The "git and optional Unix tools from Windows" option will allow you to learn Unix from Rstudio, however, it might interfere with the Windows command line.
 4. Finally, change the Rstudio preference so that you are using Git bash as the terminal (only for Windows user).
@@ -121,7 +121,7 @@ The textbook for this section is available [here (for Windows)](https://rafalab.
 
 ## GitHub
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#github-accounts)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#github-accounts){target="_blank"}.
 
 **Key points**
 
@@ -131,7 +131,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 ## GitHub Repositories
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#github-repos)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#github-repos){target="_blank"}.
 
 **Key points**
 
@@ -143,7 +143,7 @@ Step 2: Connect to RStudio.
 
 ## RStudio, Git, and GitHub
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#git-overview)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#git-overview){target="_blank"}.
 
 **Key points**
 
@@ -160,7 +160,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 	2. **add**: stage files for commit; click on stage box under git pane
 	3. **commit**: commit to the local repo; click on "commit" button under git pane; add a commit message
 	4. **push**: push to the remote repo on Github
-* .gitignore file: details check [here](https://git-scm.com/docs/gitignore)
+* .gitignore file: details check [here](https://git-scm.com/docs/gitignore){target="_blank"}
 
 ## Comprehension Check - Installing Software
 
@@ -289,19 +289,19 @@ A tilde   “~” is your home directory.
 	
 ## Organizing with Unix
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html){target="_blank"}.
 
 **Resources**
 
 You can learn more about Unix from a number of other resources:
 
-[Codecademy](https://www.codecademy.com/learn/learn-the-command-line)
+[Codecademy](https://www.codecademy.com/learn/learn-the-command-line){target="_blank"}.
 
-[Quora list of Linux reference books](https://www.quora.com/Which-are-the-best-Unix-Linux-reference-books)
+[Quora list of Linux reference books](https://www.quora.com/Which-are-the-best-Unix-Linux-reference-books){target="_blank"}.
 
 ## The Terminal
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#the-terminal)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#the-terminal){target="_blank"}.
 
 **Key points**
 
@@ -316,7 +316,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 ## The Filesystem
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#filesystem)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#filesystem){target="_blank"}.
 
 **Key points**
 
@@ -328,7 +328,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 ## Working Directory
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#working-directory)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#working-directory){target="_blank"}.
 
 **Key points**
 
@@ -339,7 +339,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 ## Unix Commands
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#unix-commands)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#unix-commands){target="_blank"}.
 
 **Key points**
 
@@ -364,7 +364,7 @@ cd  # return to the home dir
 
 ## mv and rm: Moving and Removing Files
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#more-unix-commands)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#more-unix-commands){target="_blank"}.
 
 **Key points**
 
@@ -382,7 +382,7 @@ rm filename-1 filename-2 filename-3
 
 ## less: Looking at a File
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#less-looking-at-a-file)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#less-looking-at-a-file){target="_blank"}.
 
 **Key points**
 
@@ -396,7 +396,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 ## Preparing for a Data Science Project
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#prep-project)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#prep-project){target="_blank"}.
 
 **Key points**
 
@@ -548,11 +548,11 @@ The Reproducible Reports section guides you through how to create data science r
 
 There is a graded comprehension check at the end of the section.
 
-We will use [this example GitHub repository](https://github.com/rairizarry/murders) throughout.
+We will use [this example GitHub repository](https://github.com/rairizarry/murders){target="_blank"} throughout.
 
 ## Reproducible Reports with R Markdown
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/reproducible-projects-with-rstudio-and-r-markdown.html)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/reproducible-projects-with-rstudio-and-r-markdown.html){target="_blank"}.
 
 **Key points**
 
@@ -562,13 +562,13 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 ## R Markdown
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/reproducible-projects-with-rstudio-and-r-markdown.html#r-markdown)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/reproducible-projects-with-rstudio-and-r-markdown.html#r-markdown){target="_blank"}.
 
 **Other useful links**
 
-You can learn more about R Markdown at [markdowntutorial.com](https://www.markdowntutorial.com).
+You can learn more about R Markdown at [markdowntutorial.com](https://www.markdowntutorial.com){target="_blank"}.
 
-The [code for the sample report](https://raw.githubusercontent.com/rairizarry/murders/master/report.Rmd) is available .
+The [code for the sample report](https://raw.githubusercontent.com/rairizarry/murders/master/report.Rmd){target="_blank"} is available .
 
 **Key points**
 
@@ -596,9 +596,9 @@ summary(pressure)```
 
 ## knitr
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/reproducible-projects-with-rstudio-and-r-markdown.html#knitr)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/reproducible-projects-with-rstudio-and-r-markdown.html#knitr){target="_blank"}.
 
-It also may be useful to explore the [RMarkdown website](https://rmarkdown.rstudio.com) and the [knitr website](https://yihui.org/knitr/).
+It also may be useful to explore the [RMarkdown website](https://rmarkdown.rstudio.com){target="_blank"} and the [knitr website](https://yihui.org/knitr/){target="_blank"}.
 
 **Key points**
 
@@ -726,14 +726,14 @@ There is a graded comprehension check at the end of the section.
 
 ## Git and GitHub
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#why-use-git-and-github)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#why-use-git-and-github){target="_blank"}.
 
 **Additional Git and GitHub resources**
 
-* [Codecademy](https://www.codecademy.com/learn/learn-git)
-* [GitHub Guides](https://guides.github.com/activities/hello-world/)
-* [Try Git tutorial](https://try.github.io)
-* [Happy Git and GitHub for the useR](https://happygitwithr.com)
+* [Codecademy](https://www.codecademy.com/learn/learn-git){target="_blank"}.
+* [GitHub Guides](https://guides.github.com/activities/hello-world/){target="_blank"}.
+* [Try Git tutorial](https://try.github.io){target="_blank"}.
+* [Happy Git and GitHub for the useR](https://happygitwithr.com){target="_blank"}.
 
 **Key points**
 
@@ -747,9 +747,9 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 ## Using Git at the Command Line
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#git-overview)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#git-overview){target="_blank"}.
 
-Explore the [discussed repository](https://github.com/rairizarry/murders)
+Explore the [discussed repository](https://github.com/rairizarry/murders){target="_blank"}.
 
 ![Git stages](images/Git stages.png)
 
@@ -795,7 +795,7 @@ git merge
 
 ## Creating a GitHub Repository
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#init)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/git.html#init){target="_blank"}.
 
 **Key points**
 
@@ -984,7 +984,7 @@ There is a two-part graded comprehension check at the end of the section.
 
 ## Advanced Unix: Arguments
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#arguments)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#arguments){target="_blank"}.
 
 **Key points**
 
@@ -999,7 +999,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 ## Advanced Unix: Getting Help and Pipes
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#getting-help) and [here](https://rafalab.github.io/dsbook/unix.html#pipes)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#getting-help){target="_blank"} and [here](https://rafalab.github.io/dsbook/unix.html#pipes){target="_blank"}.
 
 **Key Points**
 
@@ -1008,7 +1008,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 ## Advanced Unix: Wild cards
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#wild-cards)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#wild-cards){target="_blank"}.
 
 **Key points**
 
@@ -1019,7 +1019,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 ## Advanced Unix: Environment Variables and Shells
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#environment-variables) and [here](https://rafalab.github.io/dsbook/unix.html#shells)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#environment-variables){target="_blank"} and [here](https://rafalab.github.io/dsbook/unix.html#shells){target="_blank"}.
 
 **Key points**
 
@@ -1031,7 +1031,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 ## Advanced Unix: Executables, Permissions, and File Types
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#executables) and [here](https://rafalab.github.io/dsbook/unix.html#permissions-and-file-types)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#executables){target="_blank"} and [here](https://rafalab.github.io/dsbook/unix.html#permissions-and-file-types){target="_blank"}.
 
 **Key points**
 
@@ -1045,7 +1045,7 @@ The textbook for this section is available [here](https://rafalab.github.io/dsbo
 
 ## Advanced Unix: Commands You Should Learn
 
-The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#commands-you-should-learn)
+The textbook for this section is available [here](https://rafalab.github.io/dsbook/unix.html#commands-you-should-learn){target="_blank"}.
 
 **Key points**
 
